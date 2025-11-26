@@ -1968,7 +1968,13 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
   }
   .main-wrapper .features-grid {
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .main-wrapper .features-grid .feature-item {
+    min-width: 150px;
+    max-width: 150px;
   }
   .main-wrapper .icon-box {
     width: 27vw;
