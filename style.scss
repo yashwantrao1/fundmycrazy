@@ -66,6 +66,13 @@ $section-max-width: none;
     box-sizing: border-box;
     font-family: "Google Sans Flex", sans-serif;
 }
+.ctaAnim{
+    transition: all 0.3s ease;
+}
+.ctaAnim:hover{
+    box-shadow: 2px 2px 0px 1px var(--red);
+}
+
 
 body {
     font-family: var(--font);
@@ -200,12 +207,9 @@ body {
         text-decoration: none;
         font-weight: 700;
         font-size: 0.85rem;
-        transition: transform 0.2s;
+    
     }
 
-    .btn-submit-small:hover {
-        transform: scale(1.05);
-    }
 
     // Mobile Menu Toggle Button
     .mobile-menu-toggle {
@@ -1577,15 +1581,14 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.2rem;
-        transition: transform 0.2s ease;
         cursor: pointer;
         display: inline-block;
         width: 280px;
     }
 
-    .btn:hover {
-        transform: translateY(-3px);
-    }
+    // .btn:hover {
+    //     transform: translateY(-3px);
+    // }
 
     .btn-white {
         background-color: var(--white);

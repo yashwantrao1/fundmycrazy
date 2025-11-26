@@ -54,6 +54,14 @@
   font-family: "Google Sans Flex", sans-serif;
 }
 
+.ctaAnim {
+  transition: all 0.3s ease;
+}
+
+.ctaAnim:hover {
+  box-shadow: 2px 2px 0px 1px var(--red);
+}
+
 body {
   font-family: var(--font);
   background-color: var(--white);
@@ -158,10 +166,6 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 0.85rem;
-  transition: transform 0.2s;
-}
-.navbar .btn-submit-small:hover {
-  transform: scale(1.05);
 }
 .navbar .mobile-menu-toggle {
   display: none;
@@ -1385,13 +1389,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
-  transition: transform 0.2s ease;
   cursor: pointer;
   display: inline-block;
   width: 280px;
-}
-.faqs .btn:hover {
-  transform: translateY(-3px);
 }
 .faqs .btn-white {
   background-color: var(--white);
