@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund My Crazy | Hero Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./assets/fevicon.webp" type="image/x-icon">
+    <meta name="description"
+        content="Fund My Crazy is a competition for students to pitch their crazy ideas to win funding. It is a platform for students to showcase their creativity and innovation.">
+    <meta name="keywords" content="Fund My Crazy, competition, students, funding, innovation, creativity">
+    <meta name="author" content="Fund My Crazy">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="google" content="notranslate">
+    <style>
+        @import "./style.css";
+    </style> 
+    
+</head>
+
+<body>
+    <!-- 1. NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./assets/gemini.png" alt="" class="gemini-icon">
+                Fund my Crazy
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <div class="nav-menu">
+                <a href="#challenge" class="nav-link">The Challenge</a>
+                <a href="#how-it-works" class="nav-link">How it works</a>
+                <a href="#prizes" class="nav-link">Prizes</a>
+                <a href="#criteria" class="nav-link">Criteria</a>
+                <a href="#" class="btn-submit-small">Submit Idea</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero">
+        <div class="banner-container">
+            <video class="banner desk" src="./assets/banner_video.mp4" poster="./assets/banner2.png" autoplay muted loop></video>
+            <video class="banner phone" src="./assets/banner_video_1.mp4"  autoplay muted loop></video>
+            <!-- <img class="banner" src="./assets/banner2.png" alt="hero image"> -->
+            <a href="" class="cta-button">SUBMIT YOUR IDEA</a>
+        </div>
+        <div class="deadline-strip">
+            <img src="./assets/money2.svg" alt="money" class="money-float m1">
+            <img src="./assets/money1.svg" alt="money" class="money-float m2">
+            <div>
+                <div class="deadline-content">
+                    <div class="deadline-text shadow-dance-text">
+                        DEADLINE: DECEMBER 10, 2025
+                    </div>
+
+                    <div class="countdown-wrapper" id="countdown">
+                        <div class="time-card">
+                            <span class="time-number" id="days">00</span>
+                            <span class="time-label">Days</span>
+                        </div>
+                        <div class="time-card">
+                            <span class="time-number" id="hours">00</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-card">
+                            <span class="time-number" id="minutes">00</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-card">
+                            <span class="time-number" id="seconds">00</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main-wrapper">
+
+        <!-- SECTION 1: THE CHALLENGE -->
+        <div id="challenge" class="challenge-section">
+
+            <!-- Left Text -->
+            <div class="challenge-text">
+                <h2 class="section-title shadow-dance-text">THE CHALLeNGE</h2>
+                <p class="section-desc" animate>
+                    We're funding 10 wild solutions to real campus issues - from apps to events, products to services,
+                    anything that makes student life better.
+                </p>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="features-grid">
+
+                <!-- Item 1 -->
+                <div class="feature-item">
+                    <div class="icon-box bg-blue">
+                        <img src="./assets/Icon 1.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="feature-title">Any Student,<br>Any Campus</div>
+                        <div class="feature-sub">Open to all disciplines.<br>No coding skills required.</div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="feature-item">
+                    <div class="icon-box bg-red">
+                        <img src="./assets/Icon-02.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="feature-title">Use Gemini<br>to Pitch</div>
+                        <div class="feature-sub">Use AI to create<br>mandatory mockup.</div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="feature-item">
+                    <div class="icon-box bg-green">
+                        <img src="./assets/money3.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="feature-title">Everyone<br>Wins Funding</div>
+                        <div class="feature-sub">All top 10 finalists<br>get funded (₹3L - ₹25L).</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SECTION 2: GEMINI AI MOCKUP -->
+        <div class="gemini-card">
+
+            <!-- Header -->
+            <div class="gemini-header">
+                <div class="gemini-avatar"></div>
+                <div class="gemini-info">
+                    <h3>Gemini</h3>
+                    <span>AI Assistant</span>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="gemini-prompt">
+                <!-- <i class="fa-solid fa-chevron-down faq-icon"></i> -->
+                <i class="fa-solid fa-angle-right"></i>
+                <p animate_>Generate a mockup for a smart campus mess app that reduces food waste by tracking student attendance
+                    in real-time.</p>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div class="gemini-image-placeholder">
+                <i class="fa-regular fa-image placeholder-icon"></i>
+                <span class="placeholder-text">Gemini Generated Image</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="how-it-works" class="how-it-works">
+        <div class="header-section">
+            <h1 class="header-title shadow-dance-text">HOW IT WORKS?</h1>
+            <p class="header-subtitle" animate>A simplified path from crazy idea to funded reality.</p>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="steps-container">
+
+            <!-- STEP 1 -->
+            <div class="step-wrapper">
+                <!-- The Card -->
+                <div class="step-card card-blue">
+                    <div class="step-header">
+                        <span class="step-number">1</span>
+                        <img class="step-icon" src="./assets/submit.svg" alt="">
+                    </div>
+                    <h3 class="step-title">SUBMIT</h3>
+                    <p class="step-desc">Share your wild campus idea via Google Form. Include a Gemini mockup.</p>
+
+                    <!-- Date Badge -->
+                    <div class="date-badge text-blue">Deadline : Dec 10</div>
+                </div>
+                <!-- The Hidden Pop-out Tab -->
+                <div class="pop-out-tab tab-blue"></div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step-wrapper">
+                <div class="step-card card-red">
+                    <div class="step-header">
+                        <span class="step-number">2</span>
+                        <img class="step-icon" src="./assets/Icon-05.svg" alt="">
+                    </div>
+                    <h3 class="step-title">SELECTED</h3>
+                    <p class="step-desc">An internal panel reviews entries. Finalists are announced on Instagram.</p>
+
+                    <div class="date-badge text-red">Dec 12</div>
+                </div>
+                <div class="pop-out-tab tab-red"></div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step-wrapper">
+                <div class="step-card card-yellow">
+                    <div class="step-header">
+                        <span class="step-number">3</span>
+                        <img class="step-icon" src="./assets/sec.svg" alt="">
+                    </div>
+                    <h3 class="step-title">MUMBAI</h3>
+                    <p class="step-desc">Top 10 finalists fly to Mumbai for Google-led mentorship sessions.</p>
+
+                    <div class="date-badge text-yellow">Dec 15</div>
+                </div>
+                <div class="pop-out-tab tab-yellow"></div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="step-wrapper">
+                <div class="step-card card-green">
+                    <div class="step-header">
+                        <span class="step-number">4</span>
+                        <img class="step-icon" src="./assets/fir.svg" alt="">
+                    </div>
+                    <h3 class="step-title">FINALE</h3>
+                    <p class="step-desc">Live pitch event. Winners announced. Checks signed.</p>
+
+                    <div class="date-badge text-green">Dec 18</div>
+                </div>
+                <div class="pop-out-tab tab-green"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="what-we-are-looking-for">
+        <!-- LEFT SIDE -->
+        <div class="text-content">
+            <!-- Decorative Money Icons -->
+            <img src="./assets/money2.svg" alt="money" class="money-bill money-top m1">
+
+            <h1 class="section-title shadow-dance-text">
+                WHAT WE'RE<br>
+                LOOKING FOR
+            </h1>
+            <p class="section-desc" animate>
+                Don't limit yourself. If it solves a problem, it qualifies.
+            </p>
+            <img src="./assets/money1.svg" alt="money" class="money-bill money-bottom m2">
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="category-list">
+
+            <!-- Card 1: Product -->
+            <div class="category-card">
+                <div class="icon-circle">
+                    <img class="step-icon" src="./assets/Icon-08.svg" alt="">
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">Product</h3>
+                    <p class="card-desc">Build an app, a device, or a physical system.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Service -->
+            <div class="category-card">
+                <div class="icon-circle">
+                    <img class="step-icon" src="./assets/Icon-09.svg" alt="">
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">Service</h3>
+                    <p class="card-desc">Delivery, peer mentorship, or campus coordination.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Experience -->
+            <div class="category-card">
+                <div class="icon-circle">
+                    <img class="step-icon" src="./assets/Icon-10.svg" alt="">
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">Experience</h3>
+                    <p class="card-desc">Design events, spaces, or student communities.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Wild Card (Dark Blue) -->
+            <div class="category-card bg-dark-blue">
+                <div class="icon-circle">
+                    <img class="step-icon" src="./assets/Icon-11.svg" alt="">
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">Wild Card</h3>
+                    <p class="card-desc">The truly crazy stuff that doesn't fit anywhere else.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="criteria" class="judging-criteria">
+        <!-- Header Row -->
+        <div class="header-row">
+            <div class="header-text">
+                <h1 class="section-title shadow-dance-text">JUDGING CRITERIA</h1>
+                <p class="section-desc" animate>
+                    We use a 100% objective scoring system. No public voting, no popularity contests. Just pure merit.
+                </p>
+            </div>
+
+            <div class="gate-card">
+                <div class="gate-title">PASS/FAIL GATE</div>
+                <div class="gate-desc">
+                    Every entry must pass a Legal & Policy compliance check before entering the judging pool.
+                </div>
+            </div>
+        </div>
+
+        <!-- Criteria Grid -->
+        <div class="criteria-grid">
+
+            <!-- 1. Campus Impact -->
+            <div class="criteria-card card-impact">
+                <h3 class="card-title">Campus Impact</h3>
+                <p class="card-desc">How many students benefit? Is there genuine demand?</p>
+                <div class="card-percentage">30%</div>
+            </div>
+
+            <!-- 2. Pitch Quality -->
+            <div class="criteria-card card-pitch">
+                <h3 class="card-title">Pitch Quality</h3>
+                <p class="card-desc">How well did you visualize it using Gemini?</p>
+                <div class="card-percentage">15%</div>
+            </div>
+
+            <!-- 3. Feasibility -->
+            <div class="criteria-card card-feasibility">
+                <h3 class="card-title">Feasibility</h3>
+                <p class="card-desc">Can this actually be built?  Do you have a plan?</p>
+                <div class="card-percentage">25%</div>
+            </div>
+
+            <!-- 4. Originality -->
+            <div class="criteria-card card-originality">
+                <h3 class="card-title">Originality</h3>
+                <p class="card-desc">Is it fresh? Would students actually want this?</p>
+                <div class="card-percentage">20%</div>
+            </div>
+
+            <!-- 5. Fun & Joy -->
+            <div class="criteria-card card-fun">
+                <h3 class="card-title">Fun & Joy</h3>
+                <p class="card-desc">Does it make campus life  more enjoyable?</p>
+                <div class="card-percentage">10%</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="prizes" class="prize-section">
+        <!-- Header -->
+        <div class="prize-header">
+            <div class="pill-label">Total Prize Pool</div>
+            <div class="big-amount shadow-dance-text">₹1 CRORE</div>
+            <div class="sub-text">Everyone who pitches in Mumbai gets funded.</div>
+
+            <img src="./assets/money1.svg" alt="money" class="money-bill m1">
+            <img src="./assets/money2.svg" alt="money" class="money-bill m2">
+            <img src="./assets/money2.svg" alt="money" class="money-bill m3">
+        </div>
+
+        <!-- Grid -->
+        <div class="prize-grid">
+
+            <!-- Left Card -->
+            <div class="prize-card blue">
+                <div class="card-label">Final 3 Ideas</div>
+                <div class="card-amount">
+                    <span class="amount-number">₹3-5</span> <br>
+                    <span class="amount-unit">LAKHS</span>
+                </div>
+                <div class="card-desc">Smaller scale projects & quick wins</div>
+            </div>
+
+            <!-- Center Card (The Special One) -->
+            <div class="center-wrapper">
+                <!-- The Trophy -->
+                <div class="trophy-container">
+                    <img class="step-icon trophy-icon" src="./assets/trophy.svg" alt="">
+                </div>
+
+                <!-- The Card with Cutout -->
+                <div class="prize-card orange">
+                    <!-- Spacer to push content down below cutout -->
+                    <!-- <div class="card-label">TOP 3 IDEAS</div> -->
+                    <div class="card-amount">
+                        <span class="amount-number">₹20-25</span> <br>
+                        <span class="amount-unit">LAKHS</span>
+                    </div>
+                    <div class="card-desc">High-impact, complex scope projects</div>
+                </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="prize-card blue">
+                <div class="card-label">Next 4 Ideas</div>
+                <div class="card-amount">
+                    <span class="amount-number">₹7-10</span> <br>
+                    <span class="amount-unit">LAKHS</span>
+                </div>
+                <div class="card-desc">Medium scope with strong potential</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="victoty-section">
+        <h1 class="section-title shadow-dance-text">ROAD TO VICTORY</h1>
+
+        <div class="timeline-container">
+
+            <div class="top_container">
+                <div class="date-pin color-blue">
+                    <div class="date-pin-content">
+                        <div class="date-month">Nov 21</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h3 class="item-title color-red">SUBMISSIONS CLOSE</h3>
+                    <p class="item-desc"> Strict deadline. <br> Don't be late!</p>
+                </div>
+                <div class="date-pin color-green">
+                    <div class="date-pin-content">
+                        <div class="date-month">Dec 12</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h3 class="line-notch color-orange">MUMBAI TAKEOVER</h3>
+                    <p class="item-desc">Finalists fly in for mentorship. <br>Pack your bags! </p>
+                </div>
+                <div class="date-pin color-violet">
+                    <div class="date-pin-content">
+                        <div class="date-month">Dec 18</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-line">
+                <img src="./assets/trianle.svg" alt="line" class="line-icon">
+                <img src="./assets/trianle.svg" alt="line" class="line-icon">
+                <img src="./assets/trianle.svg" alt="line" class="line-icon">
+                <img src="./assets/trianle.svg" alt="line" class="line-icon">
+                <img src="./assets/trianle.svg" alt="line" class="line-icon">
+            </div>
+            <div class="bottom_container">
+                <div class="text-content">
+                    <h3 class="item-title color-blue">SUBMISSIONS OPEN</h3>
+                    <p class="item-desc">Start brainstorming. <br>Creat your mockups.</p>
+                </div>
+                <div class="date-pin color-red">
+                    <div class="date-pin-content">
+                        <div class="date-month">Dec 10</div>
+                        <div class="date-year">2025</div>
+                        <span class="date-day">(11:59 PM)</span>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h3 class="item-title color-green">FINALISTS ANNOUNCED</h3>
+                    <p class="item-desc">Top 10 teams selected. <br> Check your emails!</p>
+                </div>
+                <div class="date-pin color-orange">
+                    <div class="date-pin-content">
+                        <div class="date-month">Dec 15</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h3 class="line-notch color-violet">THE GRAND FINAL</h3>
+                    <p class="item-desc"> Live pitch event in Mumbai. <br>
+                        Winners celebrate!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faqs">
+        <div class="faq-container">
+            <h2 class="faq-title shadow-dance-text">QUESTIONS?</h2>
+            <div class="faq-list">
+
+                <!-- Question 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Who can apply?
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Any current student enrolled in an Indian university or college. Any discipline, any year.
+                            Individual or team entries are welcome.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do I need coding skills?
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No! This competition is about ideas. If you can dream it and plan it, you can win. You can
+                            hire developers or learn later; we fund the vision.</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I use Gemini for the mockup?
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply go to Gemini, describe your idea visually (e.g., "Create a UI mockup for a college
+                            mess app showing a food waste dashboard"), and save the image generated. Submit this image
+                            with your form.</p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there public voting?
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. To ensure fairness and avoid popularity contests, all judging is done internally by a
+                            panel of experts based on objective criteria.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- CTA Section -->
+        <div class="cta-card">
+            <img class="money-float m1" src="./assets/money1.svg" alt="">
+            <img class="money-float m2" src="./assets/money2.svg" alt="">
+            <img class="money-float m3" src="./assets/money1.svg" alt="">
+
+            <h2 class="cta-title shadow-dance-text">READY TO FUND YOUR CRAZY?</h2>
+            <p class="cta-subtitle">Don't let your wild idea stay in the group chat. Pitch it today.</p>
+
+            <div class="button-group">
+                <a href="#" class="btn btn-white">SUBMIT YOUR IDEA</a>
+                <a href="#" class="btn btn-outline">READ TERMS</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
