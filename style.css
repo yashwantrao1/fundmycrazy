@@ -1564,12 +1564,12 @@ body {
     max-width: 300px;
   }
   .prize-section .prize-grid .prize-card.orange {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     padding-top: 50px;
   }
   .prize-section .prize-grid .center-wrapper {
     grid-area: 1/1/2/3;
-    margin-bottom: -100px;
+    margin-bottom: -70px;
   }
   .prize-section .prize-grid .center-wrapper .prize-card {
     justify-content: flex-start;
@@ -1982,9 +1982,9 @@ body {
     width: calc(100% - 20px) !important;
   }
   .what-we-are-looking-for .money-bottom {
-    bottom: 68px;
+    bottom: 61%;
     width: 20%;
-    right: -3px;
+    right: -2%;
   }
   .judging-criteria .criteria-grid .criteria-card {
     width: calc(100% - 20px) !important;

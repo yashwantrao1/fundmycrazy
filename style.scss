@@ -1792,12 +1792,12 @@ body {
                 // height: clamp(14.375rem, 19.7629rem + -21.5517vw, 17.5rem);
             }
             .prize-card.orange {
-                padding-bottom: 120px;
+                padding-bottom: 100px;
                 padding-top: 50px;
             }
             .center-wrapper {
                 grid-area: 1 / 1 / 2 / 3;
-                margin-bottom: -100px;
+                margin-bottom: -70px;
                 .prize-card {
                     justify-content: flex-start;
                     padding-top: 60px;
@@ -2297,9 +2297,9 @@ body {
             }
         }
         .money-bottom{
-            bottom: 68px;
+            bottom: 61%;
             width: 20%;
-            right: -3px;
+            right: -2%;
         }
     }
     .judging-criteria {
