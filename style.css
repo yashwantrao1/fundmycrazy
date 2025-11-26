@@ -1602,7 +1602,7 @@ body {
     margin-bottom: 40px;
   }
   .main-wrapper .challenge-text {
-    padding: 0 5px 30px;
+    padding: 0 0 30px;
     text-align: center;
     border-right: 0;
   }
@@ -1949,10 +1949,10 @@ body {
     padding: 10px 20px;
   }
   .navbar .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(5px, 5px);
   }
   .navbar .mobile-menu-toggle.active .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(5px, -5px);
   }
   .main-wrapper .features-grid {
     flex-wrap: wrap;

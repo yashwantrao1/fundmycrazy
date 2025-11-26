@@ -24,8 +24,10 @@ const updateScrollShadow = (velocity = 0) => {
         resetScrollShadow();
         return;
     }
-
-    const maxOffset = 10;
+    let maxOffset = 10;
+    if(window.innerWidth < 820){
+        maxOffset = 5;
+    }
     const dynamicSpread = Math.min(maxOffset, absVelocity * 8 + 2);
     const offsetY = velocity > 0 ? dynamicSpread : -dynamicSpread;
     const offsetX = 0;

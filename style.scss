@@ -1839,7 +1839,7 @@ body {
         }
 
         .challenge-text {
-            padding: 0 5px 30px;
+            padding: 0 0 30px;
             text-align: center;
             // border-bottom: 2px solid var(--blue);
             border-right: 0;
@@ -2254,10 +2254,10 @@ body {
     .navbar {
         .mobile-menu-toggle.active {
             .hamburger-line:nth-child(1) {
-                transform: rotate(45deg) translate(6px, 6px);
+                transform: rotate(45deg) translate(5px, 5px);
             }
             .hamburger-line:nth-child(3) {
-                transform: rotate(-45deg) translate(6px, -6px);
+                transform: rotate(-45deg) translate(5px, -5px);
             }
         }
     }
