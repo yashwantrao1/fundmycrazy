@@ -593,7 +593,7 @@ body {
   margin-top: 10px;
 }
 .how-it-works .step-title {
-  font-size: var(--subheading_font_size);
+  font-size: calc(var(--subheading_font_size) - 5px);
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -669,7 +669,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 40% calc(60% - 30px);
+  grid-template-columns: 43% calc(57% - 30px);
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
