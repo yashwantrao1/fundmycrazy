@@ -1772,7 +1772,7 @@ body {
   }
   .victoty-section .timeline-container .main-line {
     height: -webkit-fill-available;
-    width: 20px;
+    width: 15px;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 20% 20% 20% 20%;
     align-items: center;
@@ -1782,10 +1782,10 @@ body {
     height: auto !important;
   }
   .victoty-section .timeline-container .main-line img:nth-child(even) {
-    transform: translate(40%, 0%) rotate(90deg) !important;
+    transform: translate(10%, 0%) rotate(90deg) !important;
   }
   .victoty-section .timeline-container .main-line img:nth-child(odd) {
-    transform: translate(-73%, 0%) rotate(-90deg) !important;
+    transform: translate(-60%, 0%) rotate(-90deg) !important;
   }
   .victoty-section .timeline-container .date-pin {
     bottom: 0;
