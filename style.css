@@ -30,7 +30,7 @@
   --color-fun: #a854f7;
   /* Typography */
   --font: "Poppins", sans-serif;
-  --paddingX: 130px;
+  --paddingX:clamp(2.5rem, -12.6442rem + 17.3077vw, 8.125rem);
   --paddingY: clamp(3.125rem, -1.9231rem + 5.7692vw, 5rem);
   --heading_font_size: 4rem;
   --subheading_font_size: 3rem;

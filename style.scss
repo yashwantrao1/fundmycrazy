@@ -34,7 +34,7 @@
     /* Typography */
     --font: "Poppins", sans-serif;
 
-    --paddingX: 130px; // 160 - 40 1920 / 1400
+    --paddingX:clamp(2.5rem, -12.6442rem + 17.3077vw, 8.125rem); // 130 - 40 1920 / 1400
     --paddingY: clamp(3.125rem, -1.9231rem + 5.7692vw, 5rem); //80 - 50  1920 - 1400
     --heading_font_size: 4rem;
     --subheading_font_size: 3rem;
