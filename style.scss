@@ -245,6 +245,7 @@ body {
             position: fixed;
             top: 0;
             left: 0;
+            right: 0;
             width: 100%;
             height: 100vh;
             background-color: var(--dark-blue);
@@ -252,7 +253,7 @@ body {
             justify-content: center;
             align-items: center;
             gap: 40px;
-            transform: translateX(-100%);
+            transform: translateX(100%);
             transition: transform 0.3s ease-in-out;
             z-index: 100;
             padding: 70px 20px 100px;
@@ -335,6 +336,7 @@ body {
             color: var(--white);
             font-weight: 800;
             z-index: 1;
+            white-space: pre;
         }
     }
 
@@ -578,6 +580,7 @@ body {
         font-size: var(--subcopy_font_size);
         .line {
             overflow: hidden;
+            white-space: pre;
         }
     }
 
@@ -762,7 +765,7 @@ body {
     }
 
     .tab-blue {
-        background-color: var(--blue-dark);
+        background-color: var(--blue);
     }
 
     .tab-red {
@@ -2353,3 +2356,15 @@ body {
         }
     }
 }
+
+
+@media screen  and (max-width: 400px){
+    .prize-section {
+        .card-desc{
+            height: 65px;
+        }
+        .card-label{
+            height: 28px;
+        }
+    }
+}   
