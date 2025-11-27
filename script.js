@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 toggleActions: 'play none none reverse',
                 onEnter: () => {
                     setTimeout(() => {
-                        animateCriteriaPercentages();
+                        // animateCriteriaPercentages();
                     }, 500);
                 }
             }
@@ -412,8 +412,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     toggleActions: 'play none none reverse',
                     onEnter: () => {
                         if (!hasAnimated) {
-                            animateCriteriaPercentages();
-                            hasAnimated = true;
+                            // animateCriteriaPercentages();                            
                         }
                     }
                 }
