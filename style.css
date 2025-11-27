@@ -496,7 +496,6 @@ body {
 }
 .main-wrapper p .line {
   overflow: hidden;
-  white-space: pre;
 }
 .main-wrapper .gemini-image-placeholder {
   width: 100%;
