@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fund My Crazy | Hero Section</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load fonts first, before CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap" rel="stylesheet">
+    <!-- CSS files after fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="./assets/fevicon.webp" type="image/x-icon">
     <meta name="description"
@@ -50,8 +55,14 @@
     <!-- 2. HERO SECTION -->
     <header class="hero">
         <div class="banner-container">
-            <video class="banner desk" src="./assets/banner_video.mp4" poster="./assets/banner2.png" autoplay muted loop></video>
-            <video class="banner phone" src="./assets/banner_video_1.mp4"  autoplay muted loop></video>
+            <video class="banner desk" poster="./assets/banner_poster1.jpg" autoplay muted playsinline loop>
+                <source src="./assets/banner_video.webm" type="video/webm">
+                <source src="./assets/banner_video.mp4" type="video/mp4">
+            </video>
+            <video class="banner phone" autoplay muted playsinline loop poster="./assets/banner_poster2.jpg">
+                <source src="./assets/banner_video_1.webm" type="video/webm">
+                <source src="./assets/banner_video_1.mp4" type="video/mp4">
+            </video>
             <!-- <img class="banner" src="./assets/banner2.png" alt="hero image"> -->
             <a href="https://forms.gle/H3bce64ofQjqFRXt9" target="_blank" class="cta-button ctaAnim"><span>SUBMIT YOUR IDEA</span><img src="./assets/dotted_arrow.svg" alt=""></a>
         </div>

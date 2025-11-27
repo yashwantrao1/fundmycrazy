@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-    }, 500);
+    }, 300);
     gsap.from(".features-grid > div", {
         y: "100px",
         duration: 0.5,
