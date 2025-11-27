@@ -25,7 +25,7 @@ const updateScrollShadow = (velocity = 0) => {
         return;
     }
     let maxOffset = 10;
-    if(window.innerWidth < 820){
+    if (window.innerWidth < 820) {
         maxOffset = 5;
     }
     const dynamicSpread = Math.min(maxOffset, absVelocity * 8 + 2);
@@ -346,25 +346,58 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    let hasAnimated = true;
+    // F    unction to animate percentage numbers from 00 to target
+    const animateCriteriaPercentages = () => {
+        const percentageElements = document.querySelectorAll('.judging-criteria .card-percentage');
+        if (hasAnimated) {
+            percentageElements.forEach((el) => {
+                const text = el.textContent.trim();
+                const targetValue = parseInt(text.replace('%', ''));
+
+                if (isNaN(targetValue)) return;
+
+                // Set initial value to 00
+                el.textContent = '00%';
+
+                // Animate to target value
+                gsap.to({ value: 0 }, {
+                    value: targetValue,
+                    duration: 1.5,
+                    ease: "power2.out",
+                    onUpdate: function () {
+                        const currentValue = Math.round(this.targets()[0].value);
+                        el.textContent = currentValue + '%';
+                    }
+                });
+            });
+        }
+        hasAnimated = false;
+    };
 
     if (window.innerWidth > 820) {
         gsap.to('.judging-criteria .criteria-grid > div', {
             y: "0px",
             opacity: 1,
             filter: "blur(0px)",
-            ease: "none",
-            duration: 1,
             ease: "power2.out",
+            duration: 1,
             stagger: 0.05,
             scrollTrigger: {
                 trigger: '.judging-criteria .criteria-grid',
                 start: 'top 85%',
-                toggleActions: 'play none none reverse'
-
+                toggleActions: 'play none none reverse',
+                onEnter: () => {
+                    setTimeout(() => {
+                        animateCriteriaPercentages();
+                    }, 500);
+                }
             }
         });
     } else {
         const criteriaCards = document.querySelectorAll('.judging-criteria .criteria-grid > div');
+        let hasAnimated = false;
+
         criteriaCards.forEach((card, index) => {
             gsap.to(card, {
                 x: "0px",
@@ -376,7 +409,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 scrollTrigger: {
                     trigger: card,
                     start: 'top bottom',
-                    toggleActions: 'play none none reverse'
+                    toggleActions: 'play none none reverse',
+                    onEnter: () => {
+                        if (!hasAnimated) {
+                            animateCriteriaPercentages();
+                            hasAnimated = true;
+                        }
+                    }
                 }
             });
         });
