@@ -557,7 +557,6 @@ body {
   position: relative;
   width: clamp(16.875rem, -3.2143rem + 21.4286vw, 22.5rem);
   margin-bottom: 70px;
-  cursor: pointer;
 }
 .how-it-works .step-wrapper:last-child .step-icon {
   width: clamp(5rem, -0.3937rem + 6.3177vw, 7.1875rem);
