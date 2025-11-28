@@ -1957,6 +1957,9 @@ body {
   .faqs .faq-icon {
     font-size: 1rem;
   }
+  .faqs .faq-answer {
+    padding: 0px 20px;
+  }
   .faqs .faq-answer p {
     padding-bottom: 15px;
     font-size: var(--subcopy_font_size);
@@ -1966,6 +1969,9 @@ body {
   }
   .faqs .btn {
     padding: 10px 20px;
+  }
+  .faqs .faq-item.active {
+    border-radius: 20px;
   }
   .navbar .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
