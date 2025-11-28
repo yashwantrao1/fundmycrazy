@@ -2052,7 +2052,22 @@ body {
   text-align: center;
   padding: 10px 20px;
   background-color: var(--light-blue);
+}
+.partner p {
   font-size: var(--small_font_size);
   font-weight: 400;
   color: var(--white);
+}
+.partner .second {
+  display: none;
+}
+
+@media screen and (max-width: 630px) {
+  .partner .first {
+    display: none;
+  }
+  .partner .second {
+    display: block;
+    font-size: 9.5px;
+  }
 }/*# sourceMappingURL=style.css.map */
