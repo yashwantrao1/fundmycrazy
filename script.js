@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Navigation scroll-to functionality
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link, .logo.top_top');
     const navbar = document.querySelector('.navbar');
     const navbarHeight = navbar ? navbar.offsetHeight : 70; // Default to 70px if navbar not found
 
