@@ -35,7 +35,7 @@
   --heading_font_size: 4rem;
   --subheading_font_size: clamp(2.5rem, 1.1538rem + 1.5385vw, 3rem);
   --copy_font_size: clamp(1.25rem, 0.5769rem + 0.7692vw, 1.5rem);
-  --subcopy_font_size: 1.2rem;
+  --subcopy_font_size: clamp(1rem, 0.25rem + 0.8333vw, 1.25rem);
   --small_font_size: 0.8rem;
   --shadow-x: 0px;
   --shadow-y: 0px;
@@ -502,16 +502,58 @@ body {
 .main-wrapper p .line {
   overflow: hidden;
 }
-.main-wrapper .gemini-image-placeholder {
+.main-wrapper .gemini_prompt_items {
   width: 100%;
-  aspect-ratio: 16/2.5;
-  background-color: #d3d3d3;
+  background-color: #ffffff;
   border-radius: 20px;
+  display: grid;
+  grid-template-columns: calc(50% - clamp(0.625rem, -1.25rem + 2.0833vw, 1.25rem)) calc(50% - clamp(0.625rem, -1.25rem + 2.0833vw, 1.25rem));
+  padding: clamp(1.25rem, -2.5rem + 4.1667vw, 2.5rem);
+  gap: clamp(1.25rem, -2.5rem + 4.1667vw, 2.5rem);
+}
+.main-wrapper .gemini_prompt_items .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.main-wrapper .gemini_prompt_items .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.main-wrapper .gemini_prompt_items .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: #757575;
+}
+.main-wrapper .gemini_prompt_items .content .title {
+  font-size: calc(var(--copy_font_size) + 10px);
+  color: var(--light-blue);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.main-wrapper .gemini_prompt_items .content .subTitle1 {
+  margin-bottom: 20px;
+  font-size: var(--subcopy_font_size);
+  font-weight: 300;
+}
+.main-wrapper .gemini_prompt_items .content .subTitle2 {
+  margin-bottom: 10px;
+  font-size: var(--copy_font_size);
+  font-weight: 500;
+}
+.main-wrapper .gemini_prompt_items .content .list {
+  font-size: var(--subcopy_font_size);
+  font-weight: 300;
+  margin-top: 0px;
+  margin-top: 5px;
+}
+.main-wrapper .gemini_prompt_items .content .list strong {
+  font-weight: 500;
 }
 .main-wrapper .placeholder-icon {
   font-size: 3rem;
@@ -1613,6 +1655,21 @@ body {
   }
 }
 @media screen and (max-width: 820px) {
+  .main-wrapper .gemini-card {
+    padding: 20px;
+  }
+  .main-wrapper .gemini_prompt_items {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.25rem, -2.5rem + 4.1667vw, 2.5rem);
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .main-wrapper .gemini_prompt_items.sec {
+    flex-direction: column-reverse;
+    padding: 10px;
+    padding-top: 20px;
+  }
   .main-wrapper .challenge-section {
     flex-direction: column;
     gap: 0px;
