@@ -345,7 +345,7 @@ body {
 
     .deadline-strip {
         background-color: #fff;
-        padding: 20px 0;
+        padding: 20px 0 0;
         color: var(--white);
         position: relative;
         z-index: 0;
@@ -420,14 +420,14 @@ body {
 
 .main-wrapper {
     @include section-shell;
-    padding: var(--paddingY) var(--paddingX);
+    
 
     .challenge-section {
         display: flex;
         align-items: center;
         gap: 60px;
-        margin-bottom: 80px;
         position: relative;
+        padding: var(--paddingY) var(--paddingX);
     }
 
     .challenge-text {
@@ -537,42 +537,23 @@ body {
     }
 
     .gemini-card {
-        background-color: #f7f7f7;
-        border-radius: 30px;
-        padding: 40px;
+        background-color: var(--blue);
+        border-radius: 0px;
         border: 1px solid rgba(0, 0, 0, 0.05);
-        margin: 0 calc(var(--paddingX) / -2);
+        padding: var(--paddingY) var(--paddingX);
     }
 
     .gemini-header {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 30px;
+        p{
+            font-size: var(--heading_font_size);
+            color: var(--white);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
     }
 
-    .gemini-avatar {
-        width: 45px;
-        height: 45px;
-        background-color: var(--blue);
-        border-radius: 50%;
-    }
-
-    .gemini-info h3 {
-        font-size: var(--subheading_font_size);
-        font-weight: 700;
-    }
-
-    .gemini-info span {
-        font-size: var(--subcopy_font_size);
-        color: var(--gray-text);
-    }
-    .spark {
-        margin: 15px 0 20px;
-        text-transform: capitalize;
-        font-size: calc(var(--subheading_font_size) - 5px);
-        color: var(--gray-text);
-    }
 
     .gemini-prompt {
         font-size: var(--subcopy_font_size);
@@ -581,6 +562,7 @@ body {
         display: flex;
         align-items: center;
         gap: 10px;
+        color: var(--white);
     }
 
     .prompt-arrow {
@@ -667,6 +649,7 @@ body {
 .how-it-works {
     @include section-shell;
     padding: 0 var(--paddingX);
+    padding-top: var(--paddingY);
     margin-bottom: var(--paddingY);
 
     .header-section {
@@ -676,10 +659,11 @@ body {
 
     .header-title {
         font-size: calc(var(--heading_font_size) * 1.3);
-        font-weight: 600;
+        font-weight: 700;
         color: var(--blue);
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        line-height: 1;
     }
 
     .header-subtitle {
@@ -1786,9 +1770,6 @@ body {
     }
 
     .main-wrapper {
-        .gemini-card {
-            padding: 20px;
-        }
         .gemini_prompt_items_container {
             display: flex;
             flex-direction: column;
@@ -1925,10 +1906,6 @@ body {
         .gemini-header{
             margin-bottom: 15px;
         }
-        .gemini-card {
-            padding: 20px;
-            padding: 10px;
-        }
         .spark{
             font-size: calc(var(--subheading_font_size) - 2px);
          }
@@ -1937,7 +1914,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: clamp(1.25rem, -2.5rem + 4.1667vw, 2.5rem);
-                padding: 10px;
+                padding: 20px;
                 padding-top: 20px;
                 .subTitle1{
                     margin-bottom: 15px;
@@ -1948,8 +1925,6 @@ body {
             }
             .gemini_prompt_items.sec {
                 flex-direction: column-reverse;
-                padding: 10px;
-                padding-top: 20px;
             }
         }
     }
