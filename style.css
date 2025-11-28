@@ -475,13 +475,18 @@ body {
   line-height: 1;
 }
 .main-wrapper .gemini-prompt {
-  font-size: var(--subcopy_font_size);
+  font-size: calc(var(--subcopy_font_size) - 2px);
   color: var(--black);
   margin-bottom: 30px;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 2px;
   color: var(--white);
+}
+.main-wrapper .gemini-prompt .asterisk-icon {
+  font-size: calc(var(--small_font_size) - 5px);
+}
+.main-wrapper .gemini-prompt * {
+  font-size: calc(var(--subcopy_font_size) - 2px);
 }
 .main-wrapper .prompt-arrow {
   color: var(--blue);
@@ -725,9 +730,8 @@ body {
   gap: 30px;
   flex-wrap: wrap;
   padding-left: var(--paddingX);
-  margin-bottom: calc(var(--paddingY) / 2);
-  padding-bottom: calc(var(--paddingY) / 2);
-  padding-top: 20px !important;
+  margin-bottom: calc(var(--paddingY) / 1);
+  padding-bottom: 6px;
   overflow: hidden;
 }
 .what-we-are-looking-for .text-content {
@@ -792,6 +796,7 @@ body {
   position: relative;
   transform: translateX(100%);
   padding-right: var(--paddingX);
+  transition: box-shadow 0.3s ease;
 }
 .what-we-are-looking-for .category-card:first-child {
   background-color: #2c72e4;
@@ -981,6 +986,20 @@ body {
   position: relative;
   padding: var(--paddingY) var(--paddingX);
 }
+.prize-section .asterisk {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+.prize-section .asterisk a {
+  text-decoration: none;
+  font-size: calc(var(--subcopy_font_size) - 5px);
+  font-weight: 400;
+  color: var(--black);
+}
 .prize-section .prize-header {
   margin-bottom: 60px;
   position: relative;
@@ -1136,6 +1155,9 @@ body {
 }
 .prize-section .card-amount .amount-unit {
   font-size: calc(var(--heading_font_size) * 1.1);
+}
+.prize-section .card-amount .amount-unit sup {
+  font-size: calc(var(--subheading_font_size) - 8px) !important;
 }
 .prize-section .card-desc {
   font-size: var(--copy_font_size);
@@ -1557,7 +1579,7 @@ body {
     max-width: 300px;
   }
   .how-it-works .step-wrapper .pop-out-tab {
-    bottom: -40px;
+    bottom: -54px;
   }
   .how-it-works .step-wrapper .step-card {
     transform: unset !important;
@@ -1671,6 +1693,9 @@ body {
   .main-wrapper .spark {
     font-size: calc(var(--subheading_font_size) - 2px);
   }
+  .main-wrapper .gemini-prompt {
+    margin-bottom: 15px;
+  }
   .main-wrapper .gemini_prompt_items_container .gemini_prompt_items {
     display: flex;
     flex-direction: column;
@@ -1690,7 +1715,6 @@ body {
   .main-wrapper .challenge-section {
     flex-direction: column;
     gap: 0px;
-    margin-bottom: 40px;
   }
   .main-wrapper .challenge-text {
     padding: 0 0 30px;
@@ -1717,7 +1741,9 @@ body {
   .what-we-are-looking-for {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0px;
+    padding-bottom: 6px;
+    margin-bottom: calc(var(--paddingY) - 6px);
     gap: 40px;
   }
   .what-we-are-looking-for .text-content {
@@ -1926,7 +1952,7 @@ body {
     font-weight: 600;
   }
   .hero .deadline-strip {
-    padding: 10px 0;
+    padding: 10px 0 0;
   }
   .hero .deadline-strip .countdown-wrapper {
     gap: 5px;

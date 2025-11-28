@@ -556,17 +556,22 @@ body {
 
 
     .gemini-prompt {
-        font-size: var(--subcopy_font_size);
+        font-size: calc(var(--subcopy_font_size) - 2px);
         color: var(--black);
         margin-bottom: 30px;
         display: flex;
-        align-items: center;
-        gap: 10px;
+        gap: 2px;
         color: var(--white);
+        .asterisk-icon{
+            font-size: calc(var(--small_font_size) - 5px);
+        }
+        *{
+            font-size: calc(var(--subcopy_font_size) - 2px);
+        }
     }
 
     .prompt-arrow {
-        color: var(--blue);
+        color: var(--blue); 
         font-weight: bold;
     }
     p {
@@ -834,9 +839,8 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     padding-left: var(--paddingX);
-    margin-bottom: calc(var(--paddingY) / 2);
-    padding-bottom: calc(var(--paddingY) / 2);
-    padding-top: 20px !important;
+    margin-bottom: calc(var(--paddingY) / 1);    
+    padding-bottom: 6px;
     overflow: hidden;
     .text-content {
         flex: 1;
@@ -907,6 +911,7 @@ body {
         position: relative;
         transform: translateX(100%);
         padding-right: var(--paddingX);
+        transition: box-shadow 0.3s ease;
         // filter: blur(10px);
     }
 
@@ -1123,6 +1128,20 @@ body {
     position: relative;
     padding: var(--paddingY) var(--paddingX);
 
+    .asterisk{
+        margin-top: 20px;
+        margin-bottom: -20px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        a{
+            text-decoration: none;
+            font-size: calc(var(--subcopy_font_size) - 5px);
+            font-weight: 400;
+            color: var(--black);
+        }
+    }
     .prize-header {
         margin-bottom: 60px;
         position: relative;
@@ -1299,6 +1318,9 @@ body {
         }
         .amount-unit {
             font-size: calc(var(--heading_font_size) * 1.1);
+            sup{
+                font-size: calc(var(--subheading_font_size) - 8px) !important;
+            }
         }
     }
 
@@ -1782,7 +1804,7 @@ body {
         .step-wrapper {
             max-width: 300px;
             .pop-out-tab {
-                bottom: -40px;
+                bottom: -54px;
             }
             .step-card {
                 transform: unset !important;
@@ -1906,7 +1928,11 @@ body {
             margin-bottom: 15px;
         }
         .spark{
+
             font-size: calc(var(--subheading_font_size) - 2px);
+         }
+         .gemini-prompt{
+            margin-bottom: 15px;
          }
         .gemini_prompt_items_container {            
             .gemini_prompt_items {
@@ -1932,7 +1958,6 @@ body {
         .challenge-section {
             flex-direction: column;
             gap: 0px;
-            margin-bottom: 40px;
         }
 
         .challenge-text {
@@ -1968,7 +1993,9 @@ body {
     .what-we-are-looking-for {
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 0px;
+        padding-bottom: 6px;
+        margin-bottom: calc(var(--paddingY) -  6px);
         gap: 40px;
 
         .text-content {
@@ -2205,7 +2232,7 @@ body {
             }
         }
         .deadline-strip {
-            padding: 10px 0;
+            padding: 10px 0 0;
             .countdown-wrapper {
                 gap: 5px;
             }
