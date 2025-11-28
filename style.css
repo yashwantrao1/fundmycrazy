@@ -2038,7 +2038,21 @@ body {
   .prize-section .card-label {
     height: 28px;
   }
+}
+@media screen and (max-width: 420px) {
   .prize-section .prize-grid .prize-card.orange {
     width: 55vw;
   }
+}
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: var(--light-blue);
+  font-size: var(--small_font_size);
+  font-weight: 400;
+  color: var(--white);
 }/*# sourceMappingURL=style.css.map */

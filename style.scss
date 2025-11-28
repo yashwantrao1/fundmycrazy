@@ -1549,7 +1549,7 @@ body {
     .cta-card {
         background-color: var(--light-blue);
         border-radius: 40px;
-        margin: var(--paddingY) calc(var(--paddingX) * 2);
+        margin: var(--paddingY) calc(var(--paddingX) * 2) ;
         text-align: center;
         position: relative;
         z-index: 2;
@@ -2370,6 +2370,10 @@ body {
             height: 28px;
         }
     }
+   
+}
+
+@media screen and (max-width: 420px) {
     .prize-section {
         .prize-grid {
             .prize-card.orange {
@@ -2377,4 +2381,18 @@ body {
             }
         }
     }
+}
+
+
+.partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--light-blue);
+    font-size: var(--small_font_size);
+    font-weight: 400;
+    color: var(--white);
 }
