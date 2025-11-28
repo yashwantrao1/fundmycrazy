@@ -1679,6 +1679,9 @@ body {
     padding: 20px;
     padding: 10px;
   }
+  .main-wrapper .spark {
+    font-size: var(--subheading_font_size);
+  }
   .main-wrapper .gemini_prompt_items_container .gemini_prompt_items {
     display: flex;
     flex-direction: column;
