@@ -247,21 +247,17 @@ body {
 .hero .banner-container {
   position: relative;
   height: 100%;
-  aspect-ratio: 16/6.5;
-  overflow: hidden;
+  padding-top: 70px;
+  margin-bottom: -5px;
 }
 .hero .banner-container .phone {
   display: none;
 }
 .hero .banner-container .banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: calc(100% - 70px);
-  top: 70px;
-  transform: translateX(-50%);
-  left: 50%;
+  width: 100%;
+  aspect-ratio: 1920/666;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hero .banner-container .cta-button {
   background-color: var(--black);
@@ -297,6 +293,8 @@ body {
 .hero .deadline-strip .money-float {
   position: absolute;
   width: 10%;
+  display: none;
+  pointer-events: none;
 }
 .hero .deadline-strip .m1 {
   bottom: 62%;
@@ -722,6 +720,8 @@ body {
   color: var(--green-light);
   z-index: 1;
   opacity: 0.8;
+  display: none;
+  pointer-events: none;
 }
 .what-we-are-looking-for .money-top {
   top: -41%;
@@ -948,6 +948,8 @@ body {
 .prize-section .prize-header .money-bill {
   width: 13%;
   position: absolute;
+  display: none;
+  pointer-events: none;
 }
 .prize-section .pill-label {
   background-color: var(--blue-dark);
@@ -1417,6 +1419,8 @@ body {
 }
 .faqs .money-float {
   width: 10%;
+  display: none;
+  pointer-events: none;
 }
 .faqs .m1 {
   top: clamp(-6.0625rem, 1.1805rem - 8.4838vw, -9rem);
@@ -2014,10 +2018,11 @@ body {
     gap: 0;
   }
   .hero .banner-container {
-    aspect-ratio: 9/14;
+    padding-top: 50px;
   }
   .hero .banner-container .phone {
     display: block;
+    aspect-ratio: 9/13;
   }
   .hero .banner-container .desk {
     display: none;
