@@ -1916,8 +1916,8 @@ body {
             padding: 10px;
         }
         .spark{
-            font-size: var(--subheading_font_size);
-        }
+            font-size: calc(var(--subheading_font_size) - 2px);
+         }
         .gemini_prompt_items_container {            
             .gemini_prompt_items {
                 display: flex;
