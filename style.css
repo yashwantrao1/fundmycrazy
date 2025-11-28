@@ -52,7 +52,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Google Sans Flex", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .ctaAnim {
@@ -280,6 +280,9 @@ body {
   align-items: center;
   gap: 10px;
   font-size: var(--subcopy_font_size);
+}
+.hero .banner-container .cta-button * {
+  font-weight: 700;
 }
 .hero .banner-container .cta-button img {
   height: 20px;
@@ -1138,9 +1141,12 @@ body {
 }
 .prize-section .card-amount {
   font-size: var(--heading_font_size);
-  font-weight: 700;
   line-height: 1;
+  font-weight: 700;
   margin-bottom: 20px;
+}
+.prize-section .card-amount * {
+  font-weight: 700;
 }
 .prize-section .card-amount .amount-number {
   font-size: clamp(5rem, -0.3937rem + 6.3177vw, 7.1875rem);

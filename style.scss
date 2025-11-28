@@ -65,7 +65,7 @@ $section-max-width: none;
     padding: 0;
     box-sizing: border-box;
     font-family: "Google Sans Flex", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .ctaAnim {
     transition: all 0.3s ease;
@@ -334,6 +334,9 @@ body {
             align-items: center;
             gap: 10px;
             font-size: var(--subcopy_font_size);
+            *{
+                font-weight: 700;
+            }
             img {
                 height: 20px;
             }
@@ -1300,9 +1303,13 @@ body {
 
     .card-amount {
         font-size: var(--heading_font_size);
-        font-weight: 700;
+
         line-height: 1;
+        font-weight: 700;
         margin-bottom: 20px;
+        *{
+            font-weight: 700;
+        }
         .amount-number {
             font-size: clamp(5rem, -0.3937rem + 6.3177vw, 7.1875rem);
         }

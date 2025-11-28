@@ -46,7 +46,7 @@ lenis.on('scroll', ({ velocity }) => {
 });
 
 
-const targetDate = new Date("Dec 10, 2025 00:00:00").getTime();
+const targetDate = new Date("Dec 10, 2025 23:59:59").getTime();
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
