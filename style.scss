@@ -2520,4 +2520,11 @@ body {
             font-size: 9.5px;
         }
     }
+    .main-wrapper{
+        .gemini-prompt{
+            *{
+                font-size: calc(var(--subcopy_font_size) - 4px);
+            }
+        }
+    }
 }
