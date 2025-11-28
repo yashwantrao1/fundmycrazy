@@ -34,11 +34,11 @@
     /* Typography */
     --font: "Poppins", sans-serif;
 
-    --paddingX:clamp(2.5rem, -12.6442rem + 17.3077vw, 8.125rem); // 130 - 40 1920 / 1400
+    --paddingX: clamp(2.5rem, -12.6442rem + 17.3077vw, 8.125rem); // 130 - 40 1920 / 1400
     --paddingY: clamp(3.125rem, -1.9231rem + 5.7692vw, 5rem); //80 - 50  1920 - 1400
     --heading_font_size: 4rem;
     --subheading_font_size: clamp(2.5rem, 1.1538rem + 1.5385vw, 3rem);
-    --copy_font_size:  clamp(1.25rem, 0.5769rem + 0.7692vw, 1.5rem);
+    --copy_font_size: clamp(1.25rem, 0.5769rem + 0.7692vw, 1.5rem);
     --subcopy_font_size: 1.2rem;
     --small_font_size: 0.8rem;
     --shadow-x: 0px;
@@ -66,13 +66,12 @@ $section-max-width: none;
     box-sizing: border-box;
     font-family: "Google Sans Flex", sans-serif;
 }
-.ctaAnim{
+.ctaAnim {
     transition: all 0.3s ease;
 }
-.ctaAnim:hover{
+.ctaAnim:hover {
     box-shadow: 2px 2px 0px 1px var(--red);
 }
-
 
 body {
     font-family: var(--font);
@@ -207,9 +206,7 @@ body {
         text-decoration: none;
         font-weight: 700;
         font-size: 0.85rem;
-    
     }
-
 
     // Mobile Menu Toggle Button
     .mobile-menu-toggle {
@@ -312,8 +309,7 @@ body {
             display: none;
         }
         .banner {
-            
-            width: 100%;            
+            width: 100%;
             aspect-ratio: 1920/666;
             object-fit: contain;
         }
@@ -337,7 +333,7 @@ body {
             align-items: center;
             gap: 10px;
             font-size: var(--subcopy_font_size);
-            img{
+            img {
                 height: 20px;
             }
         }
@@ -348,7 +344,7 @@ body {
         padding: 20px 0;
         color: var(--white);
         position: relative;
-        z-index: 0;        
+        z-index: 0;
         .money-float {
             position: absolute;
             width: 10%;
@@ -647,7 +643,7 @@ body {
 
     .step-wrapper {
         position: relative;
-        width:  clamp(16.875rem, -3.2143rem + 21.4286vw, 22.5rem);
+        width: clamp(16.875rem, -3.2143rem + 21.4286vw, 22.5rem);
         margin-bottom: 70px;
     }
     .step-wrapper:last-child {
@@ -1231,7 +1227,6 @@ body {
         z-index: 5;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         color: var(--orange-light);
-        
     }
 
     .trophy-icon {
@@ -1659,7 +1654,7 @@ body {
 
 @media screen and (max-width: 1500px) {
     .judging-criteria {
-        .card-percentage{
+        .card-percentage {
             font-size: calc(var(--heading_font_size) * 1.5);
         }
     }
@@ -2289,7 +2284,7 @@ body {
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
-            .feature-item{
+            .feature-item {
                 min-width: 150px;
                 max-width: 150px;
             }
@@ -2319,7 +2314,7 @@ body {
                 width: calc(100% - 20px) !important;
             }
         }
-        .money-bottom{
+        .money-bottom {
             bottom: 61%;
             width: 20%;
             right: -2%;
@@ -2339,26 +2334,26 @@ body {
         }
     }
     .how-it-works {
-        .steps-container{
+        .steps-container {
             gap: 0;
         }
     }
     .hero {
         .banner-container {
             padding-top: 50px;
-            .phone{
+            .phone {
                 display: block;
                 aspect-ratio: 9/13;
             }
-            .desk{
+            .desk {
                 display: none;
             }
         }
     }
-    .victoty-section{
-        .timeline-container{
+    .victoty-section {
+        .timeline-container {
             .text-content {
-                h3{
+                h3 {
                     white-space: unset;
                 }
             }
@@ -2366,14 +2361,20 @@ body {
     }
 }
 
-
-@media screen  and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .prize-section {
-        .card-desc{
+        .card-desc {
             height: 65px;
         }
-        .card-label{
+        .card-label {
             height: 28px;
         }
     }
-}   
+    .prize-section {
+        .prize-grid {
+            .prize-card.orange {
+                width: 55vw;
+            }
+        }
+    }
+}
