@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fund My Crazy | Terms & Conditions</title>
+    <title>Privacy & Data Protection | Fund My Crazy</title>
     <link rel="icon" href="../assets/fevicon.png" type="image/x-icon">
     <meta name="description"
         content="Fund My Crazy is a competition for students to pitch their crazy ideas to win funding. It is a platform for students to showcase their creativity and innovation.">
@@ -12,8 +13,8 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="notranslate">
-    <meta name="google" content="notranslate">    
-
+    <meta name="google" content="notranslate">
+    <!-- Fonts -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KS62S0K75W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,18 +23,19 @@
 
         gtag('config', 'G-KS62S0K75W');
     </script>
-    
+
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap");
 
         :root {
-            --primary-blue: #1A73E8; /* Adjust to match previous files if needed, e.g., #2962FF */
-            --dark-blue: #1545C9;
+            --blue: #4285f4;
+            --dark-blue: #4285f4;
+            --bg-light: #F9FAFB;
             --text-dark: #202124;
-            --text-gray: #5f6368;
+            --text-gray: #5F6368;
+            --border-color: #E0E0E0;
             --white: #ffffff;
-            --bg-light: #f8f9fa;
-            --font-heading:"Google Sans Flex", sans-serif;
+            --font-head: "Google Sans Flex", sans-serif;
             --font-body: "Google Sans Flex", sans-serif;
         }
 
@@ -41,168 +43,208 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Google Sans Flex", sans-serif;
         }
 
         body {
             font-family: var(--font-body);
-            color: var(--text-dark);
             background-color: var(--bg-light);
+            color: var(--text-dark);
             line-height: 1.6;
         }
 
         /* --- Header --- */
         .page-header {
-            background-color: var(--primary-blue);
+            background-color: var(--blue);
             color: var(--white);
             padding: 60px 20px;
             text-align: center;
         }
 
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .page-title {
-            font-family: var(--font-heading);
+            font-family: var(--font-head);
             font-size: 3rem;
+            /* Desktop size */
             font-weight: 800;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
 
         .page-subtitle {
-            font-family: var(--font-heading);
+            font-family: var(--font-head);
             font-size: 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
             opacity: 0.9;
         }
 
-        /* --- Content Container --- */
+        /* --- Main Content --- */
         .container {
             max-width: 900px;
-            margin: -40px auto 60px; /* Overlap header slightly */
+            margin: -40px auto 60px;
+            /* Overlap header on desktop */
             background-color: var(--white);
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             padding: 60px;
             position: relative;
             z-index: 2;
         }
 
         /* --- Typography --- */
-        h1, h2, h3, h4 {
-            font-family: var(--font-heading);
-            color: var(--text-dark);
+        h2 {
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-blue);
             margin-top: 40px;
             margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #F0F2F5;
             padding-bottom: 10px;
-            color: var(--primary-blue);
-        }
-
-        h3 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-top: 30px;
         }
 
         p {
             margin-bottom: 15px;
-            color: #333;
+            color: #444;
         }
 
-        ul, ol {
+        ul {
             margin-bottom: 20px;
             padding-left: 25px;
         }
 
         li {
             margin-bottom: 8px;
+            color: #444;
         }
 
         a {
-            color: var(--primary-blue);
+            color: var(--blue);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        strong {
-            font-weight: 700;
-        }
-
-        /* --- Special Sections --- */
-        .part-header {
-            background-color: #eee;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-top: 60px;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 800;
-            font-family: var(--font-heading);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-dark);
-        }
-
-        .warning-box {
-            background-color: #fff3cd;
-            border: 1px solid #ffeeba;
-            color: #856404;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        .info-box {
-            background-color: #d1ecf1;
-            border: 1px solid #bee5eb;
-            color: #0c5460;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        /* --- Footer --- */
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-gray);
-            font-size: 0.9rem;
-            border-top: 1px solid #ddd;
-            margin-top: 40px;
-        }
-
-        /* Responsive */
+        /* --- Responsive Styles --- */
         @media (max-width: 768px) {
+            .page-header {
+                padding: 40px 20px 60px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .page-subtitle {
+                font-size: 1.2rem;
+            }
+
             .container {
                 padding: 30px 20px;
+                margin-top: -20px;
+                margin-bottom: 40px;
+                width: 95%;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-title {
+                font-size: 1.75rem;
+            }
+
+            .container {
+                padding: 25px 15px;
+                width: 100%;
                 margin-top: 0;
                 border-radius: 0;
                 box-shadow: none;
+                border-top: 1px solid #eee;
             }
-            .page-title { font-size: 2.2rem; }
-            h2 { font-size: 1.5rem; }
+
+            .page-header {
+                padding-bottom: 40px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <header class="page-header">
-        <div class="page-title">Fund My Crazy</div>
-        <div class="page-subtitle">Privacy Policy</div>
+        <div class="header-content">
+            <h1 class="page-title">Fund My Crazy</h1>
+            <div class="page-subtitle">Privacy & Data Protection</div>
+        </div>
     </header>
 
-    
-    <div class="footer">
-        &copy; 2025 Google India Private Limited. All Rights Reserved.
+    <div class="container">
+
+        <h2>10.1 Information Collection</h2>
+        <p>By participating, you consent to Google collecting and processing:</p>
+        <ul>
+            <li>Personal information (name, email, phone, address, date of birth)</li>
+            <li>Educational information (college, course, year of study)</li>
+            <li>Submission materials (idea description, mockup, supporting documents)</li>
+            <li>Communications with Google during the Campaign</li>
+            <li>Event participation data (attendance, photos, videos)</li>
+        </ul>
+
+        <h2>10.2 Use of Information</h2>
+        <p>Google will use your information to:</p>
+        <ul>
+            <li>Administer the Campaign and evaluate submissions</li>
+            <li>Verify eligibility and contact winners</li>
+            <li>Process prize payments</li>
+            <li>Promote the Campaign and winners</li>
+            <li>Improve future campaigns and products</li>
+        </ul>
+
+        <h2>10.3 Data Sharing</h2>
+        <p>Your information may be shared with:</p>
+        <ul>
+            <li>Judging panel members (for evaluation purposes)</li>
+            <li>Third-party service providers assisting with Campaign administration</li>
+            <li>Tax authorities (as required by law)</li>
+            <li>The public (name, college, idea title/description for winner announcements)</li>
+        </ul>
+
+        <h2>10.4 Data Retention</h2>
+        <p>Google will retain your information for:</p>
+        <ul>
+            <li>Duration of Campaign and prize fulfilment</li>
+            <li>As long as necessary for promotional purposes</li>
+            <li>As required by applicable laws and regulations</li>
+        </ul>
+
+        <h2>10.5 Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal information</li>
+            <li>Request correction of inaccurate information</li>
+            <li>Request deletion of your information (subject to legal requirements)</li>
+            <li>Withdraw consent for promotional use of your information (though this may affect prize eligibility)</li>
+        </ul>
+        <p>To exercise these rights, contact <a href="mailto:privacy@fundmycrazy.com">privacy@fundmycrazy.com</a>.</p>
+
+        <h2>10.6 Privacy Policy</h2>
+        <p>Your participation is also governed by Google's Privacy Policy available at <a href="#">Privacy Policy</a>.
+            In case of conflict between these Terms and the Privacy Policy, these Terms prevail for Campaign-specific
+            matters.</p>
+
     </div>
 
 </body>
+
 </html>

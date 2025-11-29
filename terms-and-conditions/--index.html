@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions | Fund My Crazy</title>
+    <title>Fund My Crazy | Terms & Conditions</title>
     <link rel="icon" href="../assets/fevicon.png" type="image/x-icon">
     <meta name="description"
         content="Fund My Crazy is a competition for students to pitch their crazy ideas to win funding. It is a platform for students to showcase their creativity and innovation.">
@@ -13,8 +12,8 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="notranslate">
-    <meta name="google" content="notranslate">
-    <!-- Fonts -->
+    <meta name="google" content="notranslate">    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KS62S0K75W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,19 +22,18 @@
 
         gtag('config', 'G-KS62S0K75W');
     </script>
-
+    
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap");
 
         :root {
-            --blue: #4285f4;
-            --dark-blue: #4285f4;
-            --bg-light: #F9FAFB;
+            --primary-blue: #1A73E8; /* Adjust to match previous files if needed, e.g., #2962FF */
+            --dark-blue: #1545C9;
             --text-dark: #202124;
-            --text-gray: #5F6368;
-            --border-color: #E0E0E0;
+            --text-gray: #5f6368;
             --white: #ffffff;
-            --font-head: "Google Sans Flex", sans-serif;
+            --bg-light: #f8f9fa;
+            --font-heading:"Google Sans Flex", sans-serif;
             --font-body: "Google Sans Flex", sans-serif;
         }
 
@@ -43,98 +41,91 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: "Google Sans Flex", sans-serif;
         }
 
         body {
             font-family: var(--font-body);
-            background-color: var(--bg-light);
             color: var(--text-dark);
+            background-color: var(--bg-light);
             line-height: 1.6;
         }
 
         /* --- Header --- */
         .page-header {
-            background-color: var(--blue);
+            background-color: var(--primary-blue);
             color: var(--white);
             padding: 60px 20px;
             text-align: center;
         }
 
-        .header-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
         .page-title {
-            font-family: var(--font-head);
+            font-family: var(--font-heading);
             font-size: 3rem;
-            /* Desktop size */
             font-weight: 800;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
 
         .page-subtitle {
-            font-family: var(--font-head);
+            font-family: var(--font-heading);
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 500;
             opacity: 0.9;
         }
 
-        /* --- Main Content --- */
+        /* --- Content Container --- */
         .container {
             max-width: 900px;
-            margin: -40px auto 60px;
-            /* Overlap header on desktop */
+            margin: -40px auto 60px; /* Overlap header slightly */
             background-color: var(--white);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             padding: 60px;
             position: relative;
             z-index: 2;
         }
 
         /* --- Typography --- */
-        h2 {
-            font-family: var(--font-head);
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--dark-blue);
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            color: var(--text-dark);
             margin-top: 40px;
             margin-bottom: 20px;
-            border-bottom: 2px solid #F0F2F5;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            border-bottom: 2px solid #eee;
             padding-bottom: 10px;
+            color: var(--primary-blue);
         }
 
         h3 {
-            font-family: var(--font-head);
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            color: #333;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 30px;
         }
 
         p {
             margin-bottom: 15px;
-            color: #444;
+            color: #333;
         }
 
-        ul,
-        ol {
+        ul, ol {
             margin-bottom: 20px;
             padding-left: 25px;
         }
 
         li {
             margin-bottom: 8px;
-            color: #444;
         }
 
         a {
-            color: var(--blue);
+            color: var(--primary-blue);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         a:hover {
@@ -143,226 +134,120 @@
 
         strong {
             font-weight: 700;
-            color: #000;
         }
 
-        /* --- Section Labels --- */
-        .part-label {
-            display: inline-block;
-            background-color: var(--blue);
-            color: var(--white);
-            font-family: var(--font-head);
-            font-weight: 800;
+        /* --- Special Sections --- */
+        .part-header {
+            background-color: #eee;
             padding: 15px 20px;
             border-radius: 8px;
+            margin-top: 60px;
+            text-align: center;
             font-size: 1.5rem;
+            font-weight: 800;
+            font-family: var(--font-heading);
             text-transform: uppercase;
             letter-spacing: 1px;
+            color: var(--text-dark);
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
             margin-top: 40px;
-            margin-bottom: 20px;
         }
 
-        /* --- Special Boxes --- */
-        .highlight-box {
-            background-color: #FFF8E1;
-            border: 1px solid #FFECB3;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            color: #5D4037;
-        }
-
-        .alert-box {
-            background-color: #FCE8E6;
-            border: 1px solid #FAD2CF;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            color: #C5221F;
-        }
-
-        /* Table Style */
-        .simple-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        .simple-table th,
-        .simple-table td {
-            border: 1px solid var(--border-color);
-            padding: 12px;
-            text-align: left;
-        }
-
-        .simple-table th {
-            background-color: #F8F9FA;
-            font-weight: 700;
-            font-family: var(--font-head);
-        }
-
-        /* --- Responsive Styles --- */
+        /* Responsive */
         @media (max-width: 768px) {
-
-            /* Adjust header spacing */
-            .part-label {
-                font-size: 1rem;
-            }
-
-            .page-header {
-                padding: 40px 20px 60px;
-                /* More bottom padding to handle overlap removal if needed, or keep consistent */
-            }
-
-            .page-title {
-                font-size: 2rem;
-                /* Smaller title on mobile */
-            }
-
-            .page-subtitle {
-                font-size: 1.2rem;
-            }
-
-            /* Adjust container layout */
             .container {
                 padding: 30px 20px;
-                /* Less padding inside box */
-                margin-top: -20px;
-                /* Less negative margin */
-                margin-bottom: 40px;
-                width: 95%;
-                /* Take up most of screen width */
-                border-radius: 12px;
-            }
-
-            /* Adjust typography scaling */
-            h2 {
-                font-size: 1.3rem;
-                margin-top: 30px;
-            }
-
-            h3 {
-                font-size: 1.05rem;
-            }
-
-            /* Make table scrollable horizontally if needed */
-            .simple-table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-
-            /* Allow text wrapping in table on mobile to avoid horizontal scroll if preferred, 
-               but block+overflow is safer for small columns. 
-               Alternatively, set min-width. */
-            .simple-table th,
-            .simple-table td {
-                white-space: normal;
-                /* Allow text to wrap */
-                min-width: 120px;
-                /* Ensure columns don't squish too much */
-            }
-
-            /* Adjust lists */
-            ul,
-            ol {
-                padding-left: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .page-title {
-                font-size: 1.75rem;
-            }
-
-            .container {
-                padding: 25px 15px;
-                width: 100%;
-                /* Full width on very small screens */
                 margin-top: 0;
-                /* Remove overlap for cleaner stack */
                 border-radius: 0;
-                /* Square edges might look better full width, or keep small radius */
                 box-shadow: none;
-                /* Simplify on mobile */
-                border-top: 1px solid #eee;
             }
-
-            .page-header {
-                padding-bottom: 40px;
-                /* Reduce empty space since container doesn't overlap */
-            }
+            .page-title { font-size: 2.2rem; }
+            h2 { font-size: 1.5rem; }
         }
     </style>
 </head>
-
 <body>
 
     <header class="page-header">
-        <div class="header-content">
-            <h1 class="page-title">Fund My Crazy</h1>
-            <div class="page-subtitle">Terms & Conditions</div>
-        </div>
+        <div class="page-title">Fund My Crazy</div>
+        <div class="page-subtitle">Terms & Conditions</div>
     </header>
 
     <div class="container">
 
-        <div class="part-label" style="background-color: var(--blue); width: 100%; color: var(--white);">PART A:
-            OFFICIAL TERMS & CONDITIONS</div>
+        <div class="part-header" style="background-color: var(--primary-blue); color: var(--white);">PART A: OFFICIAL TERMS & CONDITIONS</div>
 
         <h2>1. ACCEPTANCE OF TERMS</h2>
-        <p>By submitting an entry to the "Fund My Crazy by Google Gemini" campaign (the "Campaign"), you agree to be
-            bound by these Terms and Conditions (the "Terms"). If you are not eligible, your entry may not be valid.</p>
-        <p>These Terms constitute a binding legal agreement between you ("Participant," "you," or "your") and Google
-            India Private Limited ("Google," "we," "us," or "our").</p>
+        <p>By submitting an entry to the "Fund My Crazy by Google Gemini" campaign (the "Campaign"), you agree to be bound by these Terms and Conditions (the "Terms"). If you are not eligible, your entry may not be valid.</p>
+        <p>These Terms constitute a binding legal agreement between you ("Participant," "you," or "your") and Google India Private Limited ("Google," "we," "us," or "our").</p>
 
         <h2>2. CAMPAIGN OVERVIEW</h2>
         <h3>2.1 Description</h3>
-        <p>Fund My Crazy by Google Gemini is a student innovation challenge inviting eligible students to submit
-            creative solutions to campus problems. Selected participants will have the opportunity to pitch their ideas
-            and receive prize money.</p>
-
+        <p>Fund My Crazy by Google Gemini is a student innovation challenge inviting eligible students to submit creative solutions to campus problems. Selected participants will have the opportunity to pitch their ideas and receive prize money.</p>
+        
         <h3>2.2 Campaign Period</h3>
         <ul>
-            <li><strong>Submission Period:</strong> November 24, 2025, 12:00 AM IST to December 10, 2025, 11:59 PM IST
-                (the "Submission Period")</li>
-            <li><strong>Judging Period:</strong> December 11, 2025 to December 12, 2025</li>
-            <li><strong>Finalist Announcement:</strong> December 12, 2025</li>
-            <li><strong>Finals Event:</strong> December 18, 2025 (the "Finals")</li>
+            <li>Submission Period: November 24, 2025, 12:00 AM IST to December 10, 2025, 11:59 PM IST (the "Submission Period")</li>
+            <li>Judging Period: December 11, 2025 to December 12, 2025</li>
+            <li>Finalist Announcement: December 12, 2025</li>
+            <li>Finals Event: December 18, 2025 (the "Finals")</li>
         </ul>
 
         <h3>2.3 Prize Pool</h3>
-        <p>Total prize money of ₹1,00,00,000 (One Crore Indian Rupees) will be distributed among ten (10) winning
-            participants.</p>
+        <p>Total prize money of ₹1,00,00,000 (One Crore Indian Rupees) will be distributed among ten (10) winning participants.</p>
 
         <h2>3. ELIGIBILITY</h2>
         <h3>3.1 Basic Requirements</h3>
         <p>To be eligible to participate, you must:</p>
         <ol type="a">
-            <li>Be at least 18 years of age as of November 24, 2025</li>
+            <li>Be at least 18 years of age as of November 24, 2025, OR if under 18 years of age, have obtained verifiable parental or legal guardian consent to participate</li>
             <li>Be a legal resident of India</li>
-            <li>Be enrolled as a full-time student at an accredited Indian college or university during the Submission
-                Period</li>
+            <li>Be enrolled as a full-time student at an accredited Indian college or university during the Submission Period</li>
             <li>Have access to Google Gemini for creating submission materials</li>
             <li>Comply with all Terms set forth herein</li>
         </ol>
 
+        <p><strong>Parental Consent for Minors:</strong><br>
+        If you are under 18 years of age, Google reserves the right to request proof of parental/guardian consent at any time. Failure to provide such proof within 5 business days of request will result in disqualification.</p>
+
         <h3>3.2 Ineligibility</h3>
         <p>The following individuals are NOT eligible to participate:</p>
         <ol type="a">
-            <li>Employees, contractors, and representatives of Google and its parent companies, subsidiaries, and
-                affiliates</li>
+            <li>Employees, contractors, and representatives of Google and its parent companies, subsidiaries, and affiliates</li>
             <li>Immediate family members (parent, child, sibling, spouse) and household members of the above</li>
             <li>Individuals who have been banned or disqualified from previous Google campaigns or contests</li>
             <li>Individuals residing in any jurisdiction where participation would be prohibited by law</li>
             <li>Any other criterion at the sole discretion of Google/Gemini</li>
-            <li>Individuals not meeting the conditions of 3.1</li>
         </ol>
 
         <h3>3.3 Verification</h3>
-        <p>Google reserves the right to verify eligibility at any time. Failure to provide proof of eligibility (student
-            ID, enrollment certificate, age verification) within 5 business days of request will result in
-            disqualification.</p>
+        <p>Google reserves the right to verify eligibility at any time. Failure to provide proof of eligibility (student ID, enrollment certificate, age verification) within 5 business days of request will result in disqualification.</p>
 
         <h3>3.4 Team Submissions</h3>
         <p>Team submissions are permitted (maximum 4 members per team), but:</p>
@@ -373,9 +258,9 @@
             <li>All team members must sign winner agreements if selected</li>
         </ul>
 
-        <h2>4. HOW TO PARTICIPATE</h2>
+        <h2>4. HOW TO ENTER</h2>
         <h3>4.1 Submission Requirements</h3>
-        <p>To participate, you must:</p>
+        <p>To enter, you must:</p>
         <ol type="a">
             <li>Visit <a href="https://fundmycrazy.com/">https://fundmycrazy.com/</a></li>
             <li>Complete the official submission form with accurate information</li>
@@ -407,8 +292,7 @@
         <ul>
             <li>Maximum one (1) submission per person or team</li>
             <li>Submissions must be original work created specifically for this Campaign</li>
-            <li>Submissions cannot have been previously published, submitted to other contests, or won awards elsewhere
-            </li>
+            <li>Submissions cannot have been previously published, submitted to other contests, or won awards elsewhere</li>
         </ul>
 
         <h3>4.4 Technical Requirements</h3>
@@ -420,8 +304,7 @@
         </ul>
 
         <h3>4.5 Confirmation</h3>
-        <p>You will receive an email confirmation upon successful submission. If you do not receive confirmation within
-            24 hours, contact <a href="mailto:hello@fundmycrazy.com">hello@fundmycrazy.com</a>.</p>
+        <p>You will receive an email confirmation upon successful submission. If you do not receive confirmation within 24 hours, contact <a href="mailto:hello@fundmycrazy.com">hello@fundmycrazy.com</a>.</p>
 
         <h2>5. IDEA REQUIREMENTS & RESTRICTIONS</h2>
         <h3>5.1 Content Standards</h3>
@@ -435,13 +318,11 @@
         </ol>
 
         <h3>5.2 Prohibited Content - IMMEDIATE DISQUALIFICATION</h3>
-        <div class="alert-box">
-            <strong>CRITICAL:</strong> Submissions containing ANY of the following will result in IMMEDIATE
-            DISQUALIFICATION at any stage of the Campaign, including after the winner announcement. No appeals will be
-            entertained.
+        <div class="warning-box">
+            CRITICAL: Submissions containing ANY of the following will result in IMMEDIATE DISQUALIFICATION at any stage of the Campaign, including after the winner announcement. No appeals will be entertained.
         </div>
-
         <p>Submissions must NOT contain, promote, or be related to:</p>
+
         <ol type="a">
             <li><strong>Political Content</strong>
                 <ul>
@@ -469,8 +350,7 @@
             <li><strong>Hate Speech & Discrimination</strong>
                 <ul>
                     <li>Content that spreads hatred, enmity, or ill-will between different groups</li>
-                    <li>Discrimination based on race, caste, religion, gender, sexual orientation, disability, region,
-                        language, or any other protected characteristic</li>
+                    <li>Discrimination based on race, caste, religion, gender, sexual orientation, disability, region, language, or any other protected characteristic</li>
                     <li>Content that targets, harasses, or demeans specific communities, groups, or individuals</li>
                     <li>Casteist, racist, sexist, homophobic, or other discriminatory content</li>
                 </ul>
@@ -478,8 +358,7 @@
             <li><strong>Plagiarism & Intellectual Property Theft</strong>
                 <ul>
                     <li>Ideas copied from others and submitted as your own original work</li>
-                    <li>Submissions substantially similar to existing products, services, or published ideas without
-                        proper attribution</li>
+                    <li>Submissions substantially similar to existing products, services, or published ideas without proper attribution</li>
                     <li>Use of copyrighted material without permission</li>
                     <li>Trademark infringement or passing off</li>
                 </ul>
@@ -502,8 +381,7 @@
 
         <p><strong>Important Notes:</strong></p>
         <ul>
-            <li>Even if your idea addresses a social issue, it must NOT be framed in political, religious, or hate-based
-                terms</li>
+            <li>Even if your idea addresses a social issue, it must NOT be framed in political, religious, or hate-based terms</li>
             <li>Ideas that appear neutral but have underlying political or religious agendas will be disqualified</li>
             <li>Discussing campus problems is acceptable; targeting specific communities or spreading hatred is not</li>
             <li>When in doubt, avoid political, religious, or divisive content entirely</li>
@@ -517,8 +395,7 @@
             <li>Encourage students to circumvent legitimate institutional rules</li>
             <li>Create safety or security risks for campus communities</li>
         </ul>
-        <p>Ideas may identify problems with existing systems but must propose constructive solutions, not merely
-            criticize institutions.</p>
+        <p>Ideas may identify problems with existing systems but must propose constructive solutions, not merely criticize institutions.</p>
 
         <h3>5.4 Immediate Disqualification Triggers</h3>
         <p>Participants will be IMMEDIATELY DISQUALIFIED without warning or appeal if their submission:</p>
@@ -538,18 +415,14 @@
             <li>Ban from future Google campaigns</li>
             <li>No refund of any costs incurred (if applicable)</li>
         </ul>
-        <p><strong>No Appeals:</strong> Disqualification decisions are final and binding. Google is not obligated to
-            provide detailed explanations for disqualifications involving prohibited content.</p>
-        <p>Google reserves the right to report illegal content to appropriate authorities.</p>
+        <p>No Appeals: Disqualification decisions are final and binding. Google is not obligated to provide detailed explanations for disqualifications involving prohibited content. Google reserves the right to report illegal content to appropriate authorities.</p>
 
         <h2>6. INTELLECTUAL PROPERTY</h2>
         <h3>6.1 Ownership</h3>
-        <p>You retain all ownership rights to your submitted idea and materials. By submitting, you do NOT transfer
-            ownership to Google.</p>
+        <p>You retain all ownership rights to your submitted idea and materials. By submitting, you do NOT transfer ownership to Google.</p>
 
         <h3>6.2 License Grant</h3>
-        <p>By submitting an entry, you grant Google a worldwide, non-exclusive, royalty-free, perpetual, irrevocable
-            license to:</p>
+        <p>By submitting an entry, you grant Google a worldwide, non-exclusive, royalty-free, perpetual, irrevocable license to:</p>
         <ol type="a">
             <li>Display, reproduce, and distribute your submission materials for Campaign promotion</li>
             <li>Use your name, likeness, college name, idea title, and description in Campaign-related marketing</li>
@@ -566,14 +439,12 @@
             <li>You own all rights to the submission or have obtained necessary permissions</li>
             <li>Your submission does not infringe any third-party intellectual property rights</li>
             <li>You have NOT copied, plagiarized, or substantially borrowed from anyone else's idea</li>
-            <li>If you were inspired by existing concepts, you have significantly transformed and made them your own
-            </li>
+            <li>If you were inspired by existing concepts, you have significantly transformed and made them your own</li>
             <li>You have the right to grant the licenses described in Section 6.2</li>
             <li>If submission includes third-party materials (images, code, content), you have proper licenses</li>
         </ol>
-        <div class="alert-box">
-            <strong>WARNING:</strong> Submitting someone else's idea as your own is plagiarism and will result in
-            immediate disqualification and potential legal action. This includes:
+        <div class="warning-box">
+            WARNING: Submitting someone else's idea as your own is plagiarism and will result in immediate disqualification and potential legal action. This includes:
             <ul>
                 <li>Copying ideas from classmates, friends, or online sources</li>
                 <li>Resubmitting ideas you've seen in other contests or platforms</li>
@@ -581,32 +452,27 @@
                 <li>Team ideas where you don't have permission from other team members to submit</li>
             </ul>
         </div>
-        <p><strong>Verification:</strong> Google may use plagiarism detection tools and web searches to verify
-            originality. You may be asked to provide evidence of your creative process.</p>
+        <p>Verification: Google may use plagiarism detection tools and web searches to verify originality. You may be asked to provide evidence of your creative process.</p>
 
         <h3>6.4 Infringement Claims</h3>
-        <p>If your submission is found to infringe third-party rights, you will be disqualified and may be required to
-            return any prizes received. You agree to indemnify Google against any claims arising from your submission.
-        </p>
+        <p>If your submission is found to infringe third-party rights, you will be disqualified and may be required to return any prizes received. You agree to indemnify Google against any claims arising from your submission.</p>
 
         <h3>6.5 Similarity</h3>
-        <p>Google is not responsible if multiple participants submit similar ideas. Judging decisions on similar
-            submissions are final.</p>
+        <p>Google is not responsible if multiple participants submit similar ideas. Judging decisions on similar submissions are final.</p>
 
         <h2>7. JUDGING & SELECTION</h2>
         <h3>7.1 Judging Process</h3>
         <p>Submissions will be evaluated in two stages:</p>
+        
         <p><strong>Stage 1: Initial Review</strong><br>
-            All submissions will undergo content moderation to ensure compliance with Section 5 (Idea Requirements &
-            Restrictions). Non-compliant submissions will be disqualified without further review.</p>
-
+        All submissions will undergo content moderation to ensure compliance with Section 5 (Idea Requirements & Restrictions). Non-compliant submissions will be disqualified without further review.</p>
+        
         <p><strong>Stage 2: Judging Panel</strong><br>
-            Qualifying submissions will be evaluated by a panel of judges selected by Google based on the following
-            criteria:</p>
+        Qualifying submissions will be evaluated by a panel of judges selected by Google based on the following criteria:</p>
 
-        <table class="simple-table">
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; margin-bottom: 20px;">
             <thead>
-                <tr>
+                <tr style="background-color: #f2f2f2;">
                     <th>Criteria</th>
                     <th>Weight</th>
                     <th>Description</th>
@@ -646,19 +512,16 @@
         <ul>
             <li>All judging decisions are final and binding</li>
             <li>Judges' scores will not be disclosed to participants</li>
-            <li>Google reserves the right to select fewer than 10 winners if insufficient qualifying submissions are
-                received</li>
+            <li>Google reserves the right to select fewer than 10 winners if insufficient qualifying submissions are received</li>
             <li>Judges may request clarification or additional information from participants</li>
             <li>Google is not obligated to provide feedback on non-selected submissions</li>
         </ul>
 
         <h3>7.3 Finalist Selection</h3>
-        <p>The top ten (10) highest-scoring submissions will be selected as Finalists and invited to the Finals event in
-            Mumbai.</p>
+        <p>The top ten (10) highest-scoring submissions will be selected as Finalists and invited to the Finals event in Mumbai.</p>
 
         <h3>7.4 Conflicts of Interest</h3>
-        <p>Judges will recuse themselves from evaluating submissions from their own institutions or where personal
-            conflicts exist.</p>
+        <p>Judges will recuse themselves from evaluating submissions from their own institutions or where personal conflicts exist.</p>
 
         <h2>8. FINALS EVENT</h2>
         <h3>8.1 Finalist Obligations</h3>
@@ -681,8 +544,7 @@
             <li>Local transportation to/from event venue</li>
             <li>Meals during the event (December 17-18, 2025)</li>
         </ul>
-        <p>Travel must be booked through Google-approved channels. Participants cannot receive cash in lieu of travel.
-        </p>
+        <p>Travel must be booked through Google-approved channels. Participants cannot receive cash in lieu of travel.</p>
 
         <h3>8.3 Inability to Attend</h3>
         <p>If a Finalist cannot attend the Finals for any reason:</p>
@@ -706,14 +568,12 @@
 
         <h2>9. PRIZES</h2>
         <h3>9.1 Prize Structure</h3>
-        <p>The ten (10) Finalists who present at the Finals will receive prize money according to the following
-            structure:</p>
-        <p><strong>Tier 1 (Top 3 Ideas):</strong><br>
-            ₹20,00,000 to ₹25,00,000 each (Twenty to Twenty-Five Lakhs Indian Rupees)</p>
-        <p><strong>Tier 2 (Next 4 Ideas):</strong><br>
-            ₹7,00,000 to ₹10,00,000 each (Seven to Ten Lakhs Indian Rupees)</p>
-        <p><strong>Tier 3 (Final 3 Ideas):</strong><br>
-            ₹3,00,000 to ₹5,00,000 each (Three to Five Lakhs Indian Rupees)</p>
+        <p>The ten (10) Finalists who present at the Finals will receive prize money according to the following structure:</p>
+        <ul>
+            <li><strong>Tier 1 (Top 3 Ideas):</strong> ₹20,00,000 to ₹25,00,000 each (Twenty to Twenty-Five Lakhs Indian Rupees)</li>
+            <li><strong>Tier 2 (Next 4 Ideas):</strong> ₹7,00,000 to ₹10,00,000 each (Seven to Ten Lakhs Indian Rupees)</li>
+            <li><strong>Tier 3 (Final 3 Ideas):</strong> ₹3,00,000 to ₹5,00,000 each (Three to Five Lakhs Indian Rupees)</li>
+        </ul>
         <p>Specific amounts within each tier will be determined by the judges based on idea scope and viability.</p>
         <p><strong>Total Prize Pool:</strong> ₹1,00,00,000 (One Crore Indian Rupees)</p>
 
@@ -726,20 +586,16 @@
         </ul>
 
         <h3>9.3 Tax Obligations</h3>
-        <div class="highlight-box">
-            <strong>IMPORTANT TAX NOTICE:</strong><br>
-            <ol type="a">
-                <li>Prizes are subject to applicable Indian tax laws including Tax Deducted at Source (TDS)</li>
-                <li>Google will deduct TDS as required by law (currently 31.20% (including cess) for prizes exceeding
-                    ₹10,000)</li>
-                <li>Winners will receive Form 16A or equivalent tax documentation</li>
-                <li>Winners are solely responsible for reporting prizes as income and paying any additional taxes</li>
-                <li>Winners should consult tax professionals for advice on their specific tax obligations</li>
-                <li>Prize amounts stated are pre-tax; net amount received will be less after TDS deduction</li>
-            </ol>
-            <p>Example: A winner receiving ₹10,00,000 will have approximately ₹3,12,000 deducted as TDS and receive
-                approximately ₹6,88,000 net.</p>
-        </div>
+        <p><strong>IMPORTANT TAX NOTICE:</strong></p>
+        <ol type="a">
+            <li>Prizes are subject to applicable Indian tax laws including Tax Deducted at Source (TDS)</li>
+            <li>Google will deduct TDS as required by law (currently 30% for prizes exceeding ₹10,000)</li>
+            <li>Winners will receive Form 16A or equivalent tax documentation</li>
+            <li>Winners are solely responsible for reporting prizes as income and paying any additional taxes</li>
+            <li>Winners should consult tax professionals for advice on their specific tax obligations</li>
+            <li>Prize amounts stated are pre-tax; net amount received will be less after TDS deduction</li>
+        </ol>
+        <p>Example: A winner receiving ₹10,00,000 will have approximately ₹3,00,000 deducted as TDS and receive approximately ₹7,00,000 net.</p>
 
         <h3>9.4 Payment Process</h3>
         <p>Prize disbursement will follow this process:</p>
@@ -755,10 +611,8 @@
                 </ul>
             </li>
             <li>Winners must sign prize acceptance agreement</li>
-            <li>Payment will be made via electronic bank transfer within 45 business days of documentation completion
-            </li>
-            <li>For team winners, payment will be made to the designated primary contact who is responsible for
-                distribution</li>
+            <li>Payment will be made via electronic bank transfer within [XX] business days of documentation completion</li>
+            <li>For team winners, payment will be made to the designated primary contact who is responsible for distribution</li>
         </ol>
 
         <h3>9.5 Prize Forfeiture</h3>
@@ -773,15 +627,13 @@
         <p>Forfeited prizes will not be awarded to other participants.</p>
 
         <h3>9.6 Implementation of Prize Money</h3>
-        <p>Though Prize money is intended to support implementation of the winning idea but the same is not mandatory.
-            While Google does not mandate specific reporting:</p>
+        <p>Though Prize money is intended to support implementation of the winning idea but the same is not mandatory. While Google does not mandate specific reporting:</p>
         <ul>
             <li>Winners are encouraged to use the prize money for stated purpose</li>
             <li>Winners may be invited to share progress updates for case study purposes</li>
             <li>Participation in follow-up case studies is voluntary but appreciated</li>
         </ul>
-        <p>Google has no obligation to provide ongoing support, resources, or additional sums beyond the prize amount.
-        </p>
+        <p>Google has no obligation to provide ongoing support, resources, or additional sums beyond the prize amount.</p>
 
         <h2>10. PRIVACY & DATA PROTECTION</h2>
         <h3>10.1 Information Collection</h3>
@@ -832,9 +684,7 @@
         <p>To exercise these rights, contact <a href="mailto:privacy@fundmycrazy.com">privacy@fundmycrazy.com</a>.</p>
 
         <h3>10.6 Privacy Policy</h3>
-        <p>Your participation is also governed by Google's Privacy Policy available at <a
-                href="https://fundmycrazy.com/privacypolicy/">https://fundmycrazy.com/privacypolicy/</a>. In case of
-            conflict between these Terms and the Privacy Policy, these Terms prevail for Campaign-specific matters.</p>
+        <p>Your participation is also governed by Google's Privacy Policy available at <a href="https://fundmycrazy.com/privacypolicy/">https://fundmycrazy.com/privacypolicy/</a>. In case of conflict between these Terms and the Privacy Policy, these Terms prevail for Campaign-specific matters.</p>
 
         <h2>11. PUBLICITY & MEDIA</h2>
         <h3>11.1 Publicity Rights</h3>
@@ -861,8 +711,7 @@
             <li>Provide testimonials and quotes</li>
             <li>Participate in case studies and success stories</li>
         </ul>
-        <p>Reasonable accommodation will be made for winners who prefer limited media exposure, but some level of
-            participation is required to claim prizes.</p>
+        <p>Reasonable accommodation will be made for winners who prefer limited media exposure, but some level of participation is required to claim prizes.</p>
 
         <h3>11.3 Social Media</h3>
         <p>Google may:</p>
@@ -889,15 +738,7 @@
             </li>
             <li>Google's total liability shall not exceed the prize amount awarded to you</li>
             <li>Google is not liable for indirect, incidental, consequential, or punitive damages</li>
-            <li>For claims under Part B (Google Terms & Conditions), Google's maximum aggregate liability is limited to
-                US$1,000 as specified in Part B, Section 17</li>
-            <li>It is understood that since the present contest is being organized by Google in association with its
-                partners, for any liability arising due to responsibilities or acts directly attributable to the
-                organizing Google partner, said partner shall be responsible to indemnify Google. Further, the maximum
-                amount of liability for Google partner's of any nature either to participants shall also be limited to
-                an aggregate total sum of 1000USD, only irrespective of the number of claims. This clause shall be read
-                with clause 17 of Part-B of this T&C where Google can further only be held liable for a maximum
-                liability of 1000USD against participants' claims</li>
+            <li>For claims under Part B (Google Terms & Conditions), Google's maximum aggregate liability is limited to US$1,000 as specified in Part B, Section 17</li>
         </ol>
 
         <h3>12.2 Assumption of Risk</h3>
@@ -921,8 +762,7 @@
         <p>This indemnification survives the termination of these Terms.</p>
 
         <h3>12.4 Warranty Disclaimer</h3>
-        <p>THE CAMPAIGN IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF
-            MERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+        <p>THE CAMPAIGN IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
 
         <h2>13. GENERAL CONDITIONS</h2>
         <h3>13.1 Campaign Modification or Cancellation</h3>
@@ -935,12 +775,10 @@
             <li>Resolve disputes in its sole discretion</li>
             <li>Do such other act(s) as may be necessary</li>
         </ul>
-        <p>In the event of cancellation, Google will make reasonable efforts to notify participants but is not obligated
-            to award prizes.</p>
+        <p>In the event of cancellation, Google will make reasonable efforts to notify participants but is not obligated to award prizes.</p>
 
         <h3>13.2 Force Majeure</h3>
-        <p>Google is not liable for failure to perform obligations due to circumstances beyond its reasonable control,
-            including:</p>
+        <p>Google is not liable for failure to perform obligations due to circumstances beyond its reasonable control, including:</p>
         <ul>
             <li>Natural disasters, pandemics, or public health emergencies</li>
             <li>War, terrorism, civil unrest, or government actions</li>
@@ -949,30 +787,22 @@
         </ul>
 
         <h3>13.3 Disputes & Governing Law</h3>
-        <p>These Terms are governed by the laws of India. Any disputes arising from or related to the Campaign shall be
-            subject to the exclusive jurisdiction of courts in New Delhi, India.</p>
+        <p>These Terms are governed by the laws of India. Any disputes arising from or related to the Campaign shall be subject to the exclusive jurisdiction of courts in New Delhi, India.</p>
 
         <h3>13.4 Arbitration</h3>
-        <p>Any controversy or claim arising out of these Terms shall be settled by binding arbitration in accordance
-            with the Indian Arbitration and Conciliation Act, 1996. The arbitration shall be conducted in English in New
-            Delhi, India. Seat and Venue of Arbitration shall be New Delhi which will be conducted by a sole Arbitrator.
-        </p>
+        <p>Any controversy or claim arising out of these Terms shall be settled by binding arbitration in accordance with the Indian Arbitration and Conciliation Act, 1996. The arbitration shall be conducted in English in New Delhi, India. Seat and Venue of Arbitration shall be New Delhi which will be conducted by a sole Arbitrator.</p>
 
         <h3>13.5 Severability</h3>
-        <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall
-            continue in full force and effect.</p>
+        <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
 
         <h3>13.6 Waiver</h3>
-        <p>Google's failure to enforce any provision of these Terms does not constitute a waiver of that provision or
-            any other provision.</p>
+        <p>Google's failure to enforce any provision of these Terms does not constitute a waiver of that provision or any other provision.</p>
 
         <h3>13.7 Entire Agreement</h3>
-        <p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and Google
-            regarding the Campaign and supersede all prior agreements or understandings.</p>
+        <p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and Google regarding the Campaign and supersede all prior agreements or understandings.</p>
 
         <h3>13.8 Assignment</h3>
-        <p>You may not assign or transfer your rights or obligations under these Terms. Google may assign its rights and
-            obligations to any affiliate or successor entity.</p>
+        <p>You may not assign or transfer your rights or obligations under these Terms. Google may assign its rights and obligations to any affiliate or successor entity.</p>
 
         <h2>14. INTERPRETATION</h2>
         <h3>14.1 Headings</h3>
@@ -982,8 +812,7 @@
         <p>In case of conflict between English and translated versions of these Terms, the English version prevails.</p>
 
         <h3>14.3 Questions about Terms</h3>
-        <p>Questions about interpretation of these Terms should be directed to <a
-                href="mailto:serioustuff@fundmycrazy.com">serioustuff@fundmycrazy.com</a>.</p>
+        <p>Questions about interpretation of these Terms should be directed to <a href="mailto:serioustuff@fundmycrazy.com">serioustuff@fundmycrazy.com</a>.</p>
 
         <h2>15. WINNER ANNOUNCEMENTS</h2>
         <p>Winners will be announced:</p>
@@ -997,90 +826,73 @@
 
         <h2>16. CONTACT INFORMATION</h2>
         <p><strong>For Campaign Questions:</strong><br>
-            Email: <a href="mailto:hello@fundmycrazy.com">hello@fundmycrazy.com</a></p>
+        Email: <a href="mailto:hello@fundmycrazy.com">hello@fundmycrazy.com</a></p>
 
         <p><strong>For Privacy Questions:</strong><br>
-            Email: <a href="mailto:privacy@fundmycrazy.com">privacy@fundmycrazy.com</a></p>
+        Email: <a href="mailto:privacy@fundmycrazy.com">privacy@fundmycrazy.com</a></p>
 
         <p><strong>For Legal/Terms Questions:</strong><br>
-            Email: <a href="mailto:serioustuff@fundmycrazy.com">serioustuff@fundmycrazy.com</a></p>
+        Email: <a href="mailto:serioustuff@fundmycrazy.com">serioustuff@fundmycrazy.com</a></p>
 
         <p><strong>Website:</strong><br>
-            <a href="https://fundmycrazy.com/">https://fundmycrazy.com/</a>
-        </p>
+        <a href="https://fundmycrazy.com/">https://fundmycrazy.com/</a></p>
 
-        <div class="part-label">PART B: GOOGLE TERMS & CONDITIONS</div>
+        <div class="part-header" style="background-color: var(--primary-blue); color: var(--white);">PART B: GOOGLE TERMS & CONDITIONS</div>
 
         <h2>17. SPONSOR</h2>
         <p>This Campaign is sponsored by:<br>
-            <strong>Google India Private Limited</strong><br>
-            Corporate Identification Number: [CIN 812788515B01]<br>
-            <strong>Communique Marketing Solutions Pvt. Ltd.</strong><br>
-            Corporate Identification Number: [CIN U51909DL2004PTC125109]
-        </p>
+        Google India Private Limited<br>
+        [ADDRESS]<br>
+        Corporate Identification Number: [CIN]</p>
 
         <p><strong>Additional Google Conditions applicable to the Contest:</strong></p>
         <ul>
             <li>Participants in the contest must be at least 18 years of age or have due parental consent.</li>
             <li>Participants must have a valid Gmail account.</li>
-            <li>Google is not responsible for any typographical or other error in printing of the offer, administration
-                of the contest, or in the announcement of the prizes.</li>
+            <li>Google is not responsible for any typographical or other error in printing of the offer, administration of the contest, or in the announcement of the prizes.</li>
             <li>Participation in the contest is no assurance for eligibility to win or for securing any prizes.</li>
-            <li>Google is not responsible for disqualification or any resulting loss to the Participants</li>
-            <li>The winner(s) of the contest will be selected determined as per the rules of the contest and the
-                nominated judges by Google and its partners.</li>
-            <li>Winners confirm their consent to be contacted for the purposes of the contest by taking steps to unlock
-                the prize. Google's decision will be final and binding and no correspondence will be entertained in
-                relation to such decision.</li>
-            <li>Google reserves the right to disqualify any entry or entrant that violates the contest rules or that
-                adversely affects the fairness or the legitimate operation of the contest.</li>
+            <li>Google is not responsible for disqualification or any resulting loss to the Participants.</li>
+            <li>The winner(s) of the contest will be selected determined as per the rules of the contest and the nominated judges by Google and its partners.</li>
+            <li>Winners confirm their consent to be contacted for the purposes of the contest by taking steps to unlock the prize. Google's decision will be final and binding and no correspondence will be entertained in relation to such decision.</li>
+            <li>Google reserves the right to disqualify any entry or entrant that violates the contest rules or that adversely affects the fairness or the legitimate operation of the contest.</li>
             <li>Entries must be submitted by the deadline specified in the due course of the contest.</li>
             <li>Entries must not be offensive, defamatory, violative or otherwise inappropriate.</li>
             <li>The organizer reserves the right to modify or cancel the contest at any time.</li>
-            <li>By participating in the contest, participants agree to share their personal information including email
-                address with Google and its partners who are managing this contest.</li>
-            <li>Any tax, charge, levy, fee associated with the prize shall be entirely borne by the Participants who won
-                them .</li>
-            <li>Potential prize winners may be required to sign, notarise, and return an Affidavit or declaration of
-                eligibility, a Liability/Publicity Release and provide any additional information that may be required
-                by Google. Failure to comply within this time period may result in disqualification and selection of an
-                alternate winner.</li>
-            <li>The contest is governed by the laws of India and Delhi courts shall have jurisdiction over any dispute
-                arising in relation thereto.</li>
-            <li>Any claim or liability of Google or its affiliates arising from the contest shall be limited to US$1000.
-            </li>
-            <li>In the event of an inconsistency in interpretation, Google’s interpretation of the terms will prevail.
-            </li>
-            <li>If any prevailing legal restriction applies to the operation, participation, and winning under this
-                contest then you agree that we will abide by such a legal restriction.</li>
-            <li>The contest is organised by Google’s partners and it has limited oversight over the operational and
-                procedural details for which Google will not be liable to any claims arising hereunder</li>
-            <li>By participating in the contest, participants agree to be bound by these terms and conditions, Google’s
-                Terms of Service and Privacy Policy.</li>
+            <li>By participating in the contest, participants agree to share their personal information including email address with Google and its partners who are managing this contest.</li>
+            <li>Any tax, charge, levy, fee associated with the prize shall be entirely borne by the Participants who won them.</li>
+            <li>Potential prize winners may be required to sign, notarise, and return an Affidavit or declaration of eligibility, a Liability/Publicity Release and provide any additional information that may be required by Google. Failure to comply within this time period may result in disqualification and selection of an alternate winner.</li>
+            <li>The contest is governed by the laws of India and Delhi courts shall have jurisdiction over any dispute arising in relation thereto.</li>
+            <li>Any claim or liability of Google or its affiliates arising from the contest shall be limited to US$1000.</li>
+            <li>In the event of an inconsistency in interpretation, Google’s interpretation of the terms will prevail.</li>
+            <li>If any prevailing legal restriction applies to the operation, participation, and winning under this contest then you agree that we will abide by such a legal restriction.</li>
+            <li>By participating in the contest, participants agree to be bound by these terms and conditions, Google’s Terms of Service and Privacy Policy.</li>
         </ul>
 
         <h2>PARTICIPANT ACKNOWLEDGMENT</h2>
         <p>By submitting an entry, you acknowledge that:</p>
         <ul>
-            <li>You have read, understood, and agree to these Terms & Conditions</li>
-            <li>You meet all eligibility requirements</li>
-            <li>Your submission complies with all content requirements</li>
-            <li>Your submission does NOT contain any illegal content including political, religious, illegal, or
-                hate-based content</li>
-            <li>Your submission does NOT target or demean any specific community or group</li>
-            <li>Your idea is 100% original and NOT copied or plagiarized from any source</li>
-            <li>You grant Google the rights described in Section 6 and Section 11</li>
-            <li>You understand the tax implications described in Section 9.3</li>
-            <li>You accept the limitations of liability in Section 12</li>
-            <li>You will comply with all finalist obligations if selected</li>
-            <li>You understand that violations of prohibited content rules result in immediate disqualification with no
-                appeals</li>
+            <li>✓ You have read, understood, and agree to these Terms & Conditions</li>
+            <li>✓ You meet all eligibility requirements</li>
+            <li>✓ Your submission complies with all content requirements</li>
+            <li>✓ Your submission does NOT contain any illegal content including political, religious, illegal, or hate-based content</li>
+            <li>✓ Your submission does NOT target or demean any specific community or group</li>
+            <li>✓ Your idea is 100% original and NOT copied or plagiarized from any source</li>
+            <li>✓ You grant Google the rights described in Section 6 and Section 11</li>
+            <li>✓ You understand the tax implications described in Section 9.3</li>
+            <li>✓ You accept the limitations of liability in Section 12</li>
+            <li>✓ You will comply with all finalist obligations if selected</li>
+            <li>✓ You understand that violations of prohibited content rules result in immediate disqualification with no appeals</li>
         </ul>
 
-        <h3 style="text-align: center; font-size: 2rem; color: var(--blue); margin-top: 50px;">GOOD LUCK!</h3>
+        <div style="text-align: center; margin-top: 40px; font-weight: 800; font-size: 1.5rem; color: var(--primary-blue);">
+            GOOD LUCK!
+        </div>
 
     </div>
 
-</body>
+    <div class="footer">
+        &copy; 2025 Google India Private Limited. All Rights Reserved.
+    </div>
 
+</body>
 </html>
